@@ -1,11 +1,18 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>JavaScript Demo</title>
 	</head>
 	<body>
-		<h2 style="text-align:center">JavaScript Demo</h2>
-		<script>
-			document.write("Script Tag Fire");
-		</script>
+		<h2 style="text-align:center">Javascript Demo</h2>
+		<h4 id ="demo">Here some Texe</h4>
+		<button type="button" onclick="myFunc()">Click Me to Change The Text</button>
 	</body>
 </html>
+
+<script>
+		function myFunc()
+		{
+				document.getElementById("demo").innerHTML = "Text Are Changed";	
+		}
+</script>

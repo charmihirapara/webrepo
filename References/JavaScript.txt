@@ -27,3 +27,10 @@ JavaScript 07/10/2022
 		-> onunload - Unload
 		-> onresize - Resize
 		-> onscroll - Scroll
+
+13/10/2022 : Ajax
+	- Ajax Using XMLHttpRequest Class
+	- Using open() we can call another file
+	- Using send() we can send our request to file
+	- Using onload() we can catch the response to it
+		- this.responseText -> It give response

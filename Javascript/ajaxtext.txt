@@ -1,0 +1,4 @@
+Hii This is my Ajax file Content 
+This file On server which is give response to ajaxdemo.html using XMLHttpRequest
+Thank you
+13-10-2022 4:25 PM
