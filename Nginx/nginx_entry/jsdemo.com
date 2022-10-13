@@ -2,7 +2,7 @@ server {
 	listen 80;
 	listen [::]:80;
 
-	root /home/aum/web/charmi_repository/Nginx/;
+	root /home/aum/web/charmi_repository/Javascript/;
 
 	index jsdemo.html  index.html index.htm index.nginx-debian.html;
 
