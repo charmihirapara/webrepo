@@ -1,0 +1,116 @@
+Git :
+ First we have to install GIT
+ - Command : sudo apt-get install git
+ - Make directory : mkdir dir_git
+ make configure email & Username
+ - git config --global user.name 'Charmi'
+ - git config --global user.email 'charmi@aum.bz'
+ - git config --global user.color 'auto'
+ make one File in vi editor Create & Save it
+ After fire this command
+ - git status
+ Here our file isn't go in git So we have to add it
+ - git add <file name>
+ - git status
+ remove file from dir_git <Not out local System>
+ - git rm --cached <filename>
+ commit files on git
+ - git commit -m "<Message>"
+ Show History
+ - git log
+ Show the History with file's Contain
+ - git S
+ Delete Branch From Local
+ - git branch -d <Branch Name>
+ Delete Branch From Remotely
+ - git push <remote> --delete <branch>
+
+
+20-09-2022 : Tuesday
+
+- Login on GitHub
+- First Create Repository in github
+- We have to add Repository using Remote in Terminal [Not make readme]
+- So, here we have to open Terminal and Add Command : git remote add origin git@github.com:charmihirapara/charmi_repository.git [We have to     clone this URL from GitHub]
+- Here We have to create SSH Key Using Terminal
+- So, We have to add this command in Terminal : $ssh-keygen -t rsa -b 4096 -C "charmi@aum.bz" [Email which we ahve register]
+- Create Agenet For this Command : $ eval $(ssh-agent -s)
+- Add Identity  For this Command : $ ssh-add ~/.ssh/id_rsa
+- We can see the SSH key For this Command :  tail ~/.ssh/id_rsa.pub {Copy it}
+- On Github We have to go Setting -> SSH Key Generate -> Name of SSH Key and Paste it textbox
+- Finally Push Our Code on GitHUb Cloud Using This Commad : git push -u origin master <Branch_name>
+
+
+* Some Basic Commands :
+- git init : Inistlize empty git repository
+- git remote : Show the remotes
+- git remote add <remote> <url> : Connect to git remotely
+- git status : Show the Which files are tracked & which is not
+- git clone <url> : Get Git Project from GitHub <server>
+- git clone -b <branch_name><url> : Repository Clone with Specific Branch
+- git pull <remote> <repository> : Get that file which have changed from git (Multiple Users work in One Repository)
+- git push -u <remote> <repository> : Make that file which we have changed on git
+- git add <file_name> : Add the file on git
+- git branch : Show the Branches
+- git branch <branch_name> : Create new Branch
+- git checkout <branch_name> : Move in this Branch
+- git commit -m "<message>" : Give the message to files which push in git / Take Snapshots which we have make changes in files
+- git log : Show the git history
+    Options :
+        - git log -10 : Return last 10 commits
+        - git log --after 2022-07-12 : Return commit after 12th July, 2022
+        - git log --author="aum" : Return specific author \'s commit
+        - git log --grep="Commit-" : Return text wise commit
+- git push origin <branch_name> : Branch move on remote
+- git merge <branch_name> : Merge Branches
+- git cherry-pick <commit_id> : make that commit in current branch
+
+* When we have to ignore some files to tracked in git, yes we can :
+    -one file create that is .gitignore
+        - command : touch .gitignore
+    -Any files/Dir we have to just ignore to tracked that's file name we have to write in .gitignoer
+
+* Simple Flow of git commands : [After Install & Configure git/GitHub]
+    - git init                      ----- Inistlize empty repository
+    - create File/Directory         ----- mkdir / vi
+    - git status                    ----- see the track are clean or not
+    - git branch                    ----- see the branch
+    - git checkout -b <branchname>  ----- Create new Branch & Move it
+    - git add <filename>            ----- Add file on tracked
+    - git commit -m "Meassge"       ----- Messge to tracked files
+    - git push <remote> <branch>    ----- Putting files On Cloud
+
+
+21-09-2022 : Wednesday
+* Some basic Commands :
+- git revert <commit_id> : It returns commited files changes like Undo
+- git reset <commit_id> : It retuen commited files changes like Redo
+- git checkout -- . | <file_name> : It returns uncommited files changes like Undo
+
+
+23-09-2022 : Friday
+Nginx Install
+- sudo apt-get install nginx
+- sudo ufw enble [Firewall enble]
+- nginx -v [Version]
+- sudo ufw app list [Nginx Application]
+- sudo ufw allow [nginx allow '<Application name>']
+- sudo ufw status
+- sudo systemctl status nginx [Here Use Start, Stop, Restart Insted of status]
+
+
+Configuration of Nginx :
+- First we have to move on /etc/nginx/sites-enable directory
+- In sites-enabled have default file [Copy it]
+- We ahve to create another directory in root directory and create 1 file and paste it
+- we have to move /etc/nginx/nginx.conf file and change the include file path [Here write that path which is created file in home directory]
+- we have link the config file & new_default file usinf ln command : [ln -s <where new_deafult file is> <where nginx.conf file is>]
+- remove sites-enabled default file & sites-available default file
+
+
+
+
+
+
+
+

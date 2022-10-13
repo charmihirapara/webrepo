@@ -1,0 +1,122 @@
+23-09-2022 : Friday
+Nginx Install
+- sudo apt-get install nginx
+- sudo ufw enable [Firewall enble]
+- nginx -v [Version]
+- sudo ufw app list [Nginx Application]
+- sudo ufw allow [nginx allow '<Application name>']
+- sudo ufw status
+- sudo systemctl status nginx [Here Use Start, Stop, Restart Insted of status]
+
+
+Configuration of Nginx :
+- First we have to move on /etc/nginx/sites-enable directory
+- In sites-enabled have default file [Copy it]
+- We have to create another directory in root directory and create 1 file and paste it
+- we have to move /etc/nginx/nginx.conf file and change the include file path [Here write that path which is created file in home directory]
+- we have link the config file & new_default file using ln command : [ln -s <where new_deafult file is> <where nginx.conf file is>]
+- remove sites-enabled default file & sites-available default file
+
+Virtual Host : 
+- First we created one file in /var/www/..
+- After that we have copy default file of sites-availble directory for our new file using cp command
+- make changes that file which we have copied ...in root <our file path> , server_name <we want to used anything> [In server file default_server also remove]
+- Link to enable * using ln -s command we have to link our server file to /etc/nginx/sites-enabled directory
+- open nginx-conf file using vi /etc/nginx/nginx.conf and remove # from server_names_hash_bucket_size 64;
+- in /etc/hosts file has we can add our IP addres and Domain name
+- After nginx -t for check that no Error in our configuration
+- Than restart nginx server using : systemctl restart nginx
+
+
+
+sudo systemctl enable nginx && sudo systemctl restart nginx
+
+
+27-09-2022 : Tuesday
+
+Http Authentication on Nginx Server using OpenSSl Utilities
+- First we have to make Authentication File in /etc/nginx/
+- .htpasswd create in /etc/nginx/.htpasswd
+- Create Username & Password using Following Command :
+    - sudo sh -c "echo -n 'sammy:' >> /etc/nginx/.htpasswd" [Create Username]
+    - sudo sh -c "openssl passwd -apr1 >> /etc/nginx/.htpasswd" [For Password]
+- cat /etc/nginx/.htpasswd [See the Username & Passsword]
+- After we have to configure our Password file on server
+    - we have to open /etc/nginx/sites-enebled/default in favourite editor
+    - This two lines Add where we have to generate Auth
+        auth_basic "Restricted Content";
+        auth_basic_user_file /etc/nginx/.htpasswd;
+- Restart the nginx and run in browser
+
+#NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
+
+: write on Configuration file :
+location ~ \.php$ {
+        #NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
+        include fastcgi_params;
+        fastcgi_intercept_errors on;
+        fastcgi_pass unix:/run/php/php8.1-fpm.sock;
+        fastcgi_index info.php;
+        fastcgi_param SCRIPT_FILENAME $document_root/$fastcgi_script_name;
+}
+
+
+28-09-2022 : Wednesday
+
+Self-Signed Certificate:
+    - First we have create SSL Certificate
+     Using this command :
+        - sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
+        - sudo openssl dhparam -out /etc/nginx/dhparam.pem 4096
+    - Than, Configuration Nginx to SSL
+        Here we have to make on directory in /etc/nginx & Than
+        - sudo nano /etc/nginx/snippets/self-signed.conf
+            ssl_certificate /etc/ssl/certs/nginx-selfsigned.crt;
+            ssl_certificate_key /etc/ssl/private/nginx-selfsigned.key;
+        - sudo nano /etc/nginx/snippets/ssl-params.conf
+            ssl_protocols TLSv1.3;
+            ssl_prefer_server_ciphers on;
+            ssl_dhparam /etc/nginx/dhparam.pem;
+            ssl_ciphers EECDH+AESGCM:EDH+AESGCM;
+            ssl_ecdh_curve secp384r1;
+            ssl_session_timeout  10m;
+            ssl_session_cache shared:SSL:10m;
+            ssl_session_tickets off;
+            ssl_stapling on;
+            ssl_stapling_verify on;
+            resolver 8.8.8.8 8.8.4.4 valid=300s;
+            resolver_timeout 5s;
+            # Disable strict transport security for now. You can uncomment the following
+            # line if you understand the implications.
+            #add_header Strict-Transport-Security "max-age=63072000; includeSubDomains; preload";
+            add_header X-Frame-Options DENY;
+            add_header X-Content-Type-Options nosniff;
+            add_header X-XSS-Protection "1; mode=block";
+        - sudo nano /etc/nginx/sites-available/your_domain
+            server {
+                listen 443 ssl;
+                listen [::]:443 ssl;
+                include snippets/self-signed.conf;
+                include snippets/ssl-params.conf;
+
+                server_name your_domain.com www.your_domain.com;
+
+                root /var/www/your_domain.com/html;
+                index index.html index.htm index.nginx-debian.html;
+
+                . . .
+            }
+            And Add this server block also
+            server {
+                listen 80;
+                listen [::]:80;
+
+                server_name your_domain.com www.your_domain.com;
+
+                return 302 https://$server_name$request_uri;
+            }
+    - Adjust the Firewall
+        -Allow Acces to HTTPS
+    - Restart the Nginx
+
+

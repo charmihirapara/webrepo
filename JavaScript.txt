@@ -1,0 +1,29 @@
+JavaScript 07/10/2022
+
+07/10/2022 : Basic JavaScript
+	- Datatype
+	- Varible Scope
+	- Loops
+	- Alert, Confirm, Prompt box
+	- typeof() -> It return type of varible Like [String, Bool, Int] 
+
+08/10/2022 : Basic JavaScript
+	- Events :
+		MOUSE :
+		-> onclick - Button Click
+		-> ondblclick - Double click
+		-> oncontextmenu - Right click
+		-> onmouseenter - Mouse Hover
+		-> onmouseout - Mouse out
+		-> onmousedown  - Mouse Down
+		-> onmouseup - Mouse Up
+
+		KEUBOARD :
+		-> onkeypress - Key Press [Only work on Form tag & Body tag]
+		-> onkeyup - Key Up
+
+		WINDOW <screen> :
+		-> onload - Load
+		-> onunload - Unload
+		-> onresize - Resize
+		-> onscroll - Scroll

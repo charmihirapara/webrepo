@@ -1,0 +1,7 @@
+New file create for check that stash commad
+
+Stash used for Insted of Commit
+
+Make some changes for check it
+
+Thank you byy

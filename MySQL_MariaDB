@@ -1,0 +1,168 @@
+Install Mariadb Client/Server in Linux :
+
+    - sudo apt update
+    - sudo apt install mariadb-server mariadb-client
+    - sudo systemctl stop mariadb.service
+    - sudo systemctl start mariadb.service
+    - sudo systemctl enable mariadb.service
+    - sudo mysql_secure_installation
+    - sudo systemctl restart mariadb.service
+    - sudo mysql -u root -p [Set Username & Password]
+    - show databases; [Built-in Database show]
+    - create database test; [Create new Database]
+
+
+Installation of MySQL Workbench :
+    - sudo apt update
+    - sudo snap install mysql-workbench-community
+
+Issue Generate in Make Connection :
+    - ALTER USER 'root'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('root');
+
+
+
+03/10/2022 : Monday
+
+- Create new User in MySQL Other than root :
+    - Following Commands for create new User in MySQL/MariaDB :
+        - Show Databases; [Show the All database of MySQL]
+        - use mysql;
+        - select user,host,plugin from user;
+        - create user 'charmi'@'localhost' identified by '<Password>';
+        - grant all privileges on *.* to 'charmi'@'localhost';
+        - flush privileges;
+    - Here we have create new user for MySQL ..
+    - mysql -u 'charmi' -p for move in MySQL using new Username & Password
+
+- Create Table :
+    - Example
+        CREATE TABLE lecturer (
+        id INT NOT NULL AUTO_INCREMENT,
+        name VARCHAR(50) NOT NULL,
+        age INT CHECK(age>=18),
+        gender VARCHAR(2) NOT NULL,
+        phone VARCHAR(10) NOT NULL UNIQUE,
+        cityid INT NOT NULL,
+        PRIMARY KEY (id),
+        FOREGIN KEY (cityid) REFERENCES city(cityid)
+    );
+
+
+
+04/10/2022 : Tuesday
+
+- Group by & Having :
+    - Having used only when Group by Used
+
+    Example :   SELECT p.pname,count(p.pname) AS product_name,p.price, sum(1*p.price) AS Total  FROM customer c
+                INNER JOIN product p
+                ON c.pid = p.pid
+                GROUP BY p.pname
+                HAVING count(p.pname) >= 1
+                ORDER BY count(p.pname) DESC;
+- Sub-Query | Nested :
+    - Insted of Join :
+    Example : SELECT name FROM customer WHERE pid = (SELECT pid FROM product WHERE pname="Pen");
+
+- Exits & Not Exists :
+    Example : SELECT name FROM customer WHERE NOT EXISTS | EXISTS (SELECT pid FROM product WHERE pname="Pen");
+
+- Union & Union All :
+    - Merger both Tables.
+    - Require both Tables Feilds are same with same Datatype.
+    - Union All return all records with duplicate also.
+    Example :   SELECT * FROM lecturer WHERE city = "Rajkot"
+                UNION
+                SELECT * FROM personal_info WHERE city = "Rajkot";
+
+- If Conditions :
+    - Example :
+        -   SELECT name,age,
+            if (age > 18,"Valid Age","Not Valid Age") AS "Result of AGE"
+            FROM database1.personal_info;
+
+- String Functions :
+    -   UPPER(),UCASE(),LOWER(),LCASE(),CHARACTER_LENGTH(),CHAR_LENGTH(),LENGTH(),CONCAT(),CONCAT_WS(),LTRIM(),RTRIM(),TRIM(),POSITION(),
+        INSTR(),LOCATE(),SUBSTRING(),SUBSTR(),MID(),SUBSTRING_INDEX(),LEFT(),RIGHT(),RPAD(),LPAD(),REVERSE(),REPLACE(),STRCMP(),FIELD(),
+        FIND_IN_SET(),FORMAT(),HEX(),
+
+- Date Function :
+    -   CURREBT_DATE(),SYSDATE(),NOW(),DATE(),MONTH(),MONTHNAME(),YEAR(),QUARTER(),DAY(),DAYOFMONTH(),DAYNAME(),DAYOFWEEK(),DAYOFYEAR(),
+        WEEK(),WEEKDAY(),YEARWEEK(),LAST_DAY(),EXTRACT(),ADDDATE(INTERVAL),DATE_ADD(),MKDATE(),SUBDATE(),DATEDIFF(),TO_DAYS(),FROM_DAYS(),
+        PERIOD_ADD(),PERIOD_DIFF(),DATE_FORMAT(),STR_TO_DATE()
+
+- Alter Command :
+    - ALTER TABLE customer
+    - ADD COLUMN Email VARCHAR(255);
+
+    - ALTER TABLE customer
+    - MODIFY COLUMN Email INT(10);
+
+    - ALTER TABLE customer
+    - CHANGE Email Email_id VARCHAR(255);
+
+    - ALTER TABLE CUstomer_info
+    - rename Customer_info;
+
+    - ALTER TABLE Customer_info
+    - DROP COLUMN Email_id;
+
+    - ALTER TABLE Customer_info
+    - MODIFY Email VARCHAR(255) AFTER name;
+
+    - ALTER TABLE Customer_info
+    - AUTO_INCREMENT = 6;
+
+    - ALTER TABLE <table_name> add Index <index_name> (<COLUMN_NAME>)
+    - ALTER TAble <Table_name> drop Index <index_name>
+
+- DROP/Truncate Table :
+    - Truncate Table lecturer;
+    - DROP table lecturer;
+
+- View :
+    - Used for lengthy Query on MySQL.
+    - We can Insert, Alter, Drop VIew.
+
+    - CREATE VIEW showdata
+        AS
+        SELECT c.name,c.address,p.pname,p.price FROM Customer_info c INNER JOIN
+        product p ON c.pid = p.pid;
+
+    - ALTER VIEW showdata
+        AS
+        SELECT c.name,c.address,p.pname,p.price FROM Customer_info c INNER JOIN
+        product p ON c.pid = p.pid;
+
+    - SELECT * FROM showdata; [for use view]
+    - Rename Table showdata to show_data ;
+    - Drop VIEW show_data;
+
+- Index :
+    - To Serching on Condition fastly
+    Example :
+        - CREATE Index <Index_Name> ON <table_name> (<Column_name>)
+        - CREATE INDEX addShow ON Customer_info (mobile);
+        - Show INDEX FROM Customer_info <Table_name>;
+
+- Create New table from Exisiting table :
+    - CREATE TABLE lecturer AS SELECT id, name, address from Customer_info;
+
+- Clone Table :
+    - Create table <table_name> Like <Exisitng_table_name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

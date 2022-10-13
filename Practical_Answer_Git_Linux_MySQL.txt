@@ -1,0 +1,168 @@
+Linux : [06/10/2022-Thursday]
+
+	1. Relative VS Absoulate path : -> Relative move root to Destination directory Using [/]
+					-> Absoulate Move current to Destinatopn directory Using[cd | ..]
+	2. chmod & chown -> To change Permission & Owner
+	3. Uniq : -> Find uniq from Duplicate content
+	   Sort : -> Sorting content Asc & Desc
+	   Diff : -> Compare two file
+	4. grep/egrep : -> find content using words 
+			-> grep has used regular Expression & egrep has used extended regular expression
+			-> grep -B 4 "you" pract1.txt [return match content with first 4 line]
+	5. find : -> find files from directory
+		  -> find /home/ -type d -name "*.txt"
+	6. sed : -> Find & replace, search, Inseration, Deletion
+		 -> sed 's/Linux/Unix/' abc.txt
+	7. awk : -> print specific content from file
+		 -> awk '{print $NF}' abc.txt
+	8. curl : -> show header content of URL
+	   wget	: -> Download file from server
+	9. rsync : -> Used for copy one remote to another remote
+	10. : screen : -> Used for create multiple screen to ruuning backend process
+	11. : crontab : -> Used for make Scheduling Task
+			-> crontab -e [Create cron tab]
+			-> crontab -l [Show Cron tabs]
+	12. : ssh, etc..
+
+GIT : [06/10/2022-Thursday] 
+
+	1. Config User & Password : git config --global user.email ''
+				    git config --global user.password ''
+	2. create branch : git branch dev
+	3. create new file & Directory
+	4. difference between before commit & After commit
+	5. push it edv : git push origin dev
+	6. cherry-pick : Used for our branch commit make to another branch
+	7. pull : git pull origin master
+	- rebase : checkout from master to dev and rebase it [git rebase master]
+	8. without commit move to master [git stash] & [git stash pop in master]-->Make dev branch changes to master branch
+	9. Conflict during pull : open conflict file make some change & Commit it.
+	10. git status stage : 
+	11. remove change when added in git : git reset --hard
+	12. Clone URL : git clone <url>
+	13. create & Delete Branch : git branch <branch_name>
+			    Delete : git branch -d <branch_name>
+	14. Merge all commits : git rebase <branch_name>
+
+
+MySQL : [07/10/2022-Friday]
+
+	1. MySQL Server : 
+		- Default port : 3306
+		- Check it open? : netstat -tlnp	
+		  In MySQL :  SHOW GLOBAL VARIABLES LIKE 'PORT';
+		- Check server is running : systemctl status mysql
+		- start, stop, restart service : sudo systemctl stop mysql	
+						 sudo systemctl start mysql
+						 sudo systemctl restart mysql
+		- Login to MySQL : mysql -u <username> -p 
+		- List Dtabase : show databases;
+		- move to specific database : use <database_name>;
+		- list table : show tables;
+	2. MySQL Datatypes : 
+		- Difference between INT/SmallINT : int-32bit / smallint-16bit
+		- Signed VS UnSigned : unsigned store only positive int [0 zero also counted in unsigned] & signed store negative
+		- char VS varchar : char store 0 to 255 characters / varchar store up to 65535
+		- float VS double : float store single precision / double store double precision number
+				    MySQL uses four bytes for signle precision & eight byte for double precision
+		- enum vs set : ENUM has choose one one value [radio button]
+				SET has choose multiple value [Checkbox]
+		- blob VS text : blob store binary data / text store large string
+		- datetime : It store date & time both parts
+		- year : store YYYY formate year store
+		- Out of Range Handling : using SET sql_mode we can handle it
+					  If we write SET sql_mode = '' [Disable] It gives warning when out of range generate
+					  If we write SET sql_mode = 'TRADITIONAL' [Enable] It gives Error
+	3. MySQL Keys, Indexes, Constraints :
+		- Primary Key : It's Uniq, 
+		- Composite Key : Combination column of two or more which is uniq
+		- Foreign Key : It's refers another table's primary key 
+		- Index: Indexes are used for retrive data from database very fast
+		- Not Null : Not Accepts NULL value
+	4. MySQL Table : 
+		- Create Table Student with Primary key Field is [id, name, address]
+		- Insert Data in it
+		- Alter Table : Rename it & Add another feild [Gender]
+		- Truncate table & Drop Table
+		
+		- Create 3 Tables With Appropreate Name, Datatype, Keys, Indexes
+		- Table Name : User, Location, Category, Product
+		- Insert Data in All tables
+	5. MySQL SELECT SQL:
+		- Based on Question no. 4
+		- IN & Order By
+			- SELECT * FROM Product WHERE location_id IN(3,5) ORDER BY id;
+		- Use LIKE '%a%', '%a', 'a%', '__a'
+			- SELECT * FROM Product WHERE price LIKE '35%00';	
+			- SELECT * FROM Product WHERE price LIKE '%5%';	
+			- SELECT * FROM Product WHERE price LIKE '3%';
+			- SELECT * FROM Product WHERE price LIKE '%00';	
+			- SELECT * FROM Product WHERE price LIKE '__00';	
+		- DISTINCT, COUNT, GROUP BY, HAVING, ORDER BY with COUNT and GROUP BY
+			- SELECT distinct category_id FROM Product;
+			- SELECT COUNT(id) AS Product FROM Product;
+			- SELECT COUNT(id) AS Product,status FROM Product GROUP BY status ORDER BY COUNT(id);
+			- SELECT * FROM Product GROUP BY location_id HAVING location_id > 3;
+			- SELECT COUNT(id) FROM Product GROUP BY location_id ;
+		- Column string length and sort by length, CONCAT, GROUP_CONCAT, REPLACE
+			- SELECT LENGTH(price) as "String Length" FROM Product ORDER BY LENGTH(price) DESC;
+			- SELECT CONCAT(product_name," - ",price) AS "Product - Price" FROM Product;
+			- SELECT GROUP_CONCAT(p.product_name) AS "Product City", l.name AS City 
+			  FROM Product p JOIN Location l ON p.location_id = l.location_id GROUP BY p.location_id;
+			- SELECT REPLACE('Hirapara Charmee','Charmee','Charmi');
+		- Find MIN, MAX, SUM of price
+			- SELECT MIN(price) AS "Minimum Price" FROM Product;
+			- SELECT MAX(price) AS "Maximum Price" FROM Product;
+			- SELECT SUM(price) AS "Sum of Price" FROM Product;
+		- Show product posted within 7 Days, After 7 Days
+			- SELECT * FROM Product WHERE created_at > now() - INTERVAL 7 DAY;
+		- DATE_ADD, YEAR, WEEK
+			- SELECT DATE_ADD(now(), INTERVAL 10 DAY);
+			- SELECT YEAR('2022/10/07') AS Year;
+			- SELECT WEEK("2022-10-10") AS Week;
+	    - JOINS:
+            	- Use all related/ref. table in join
+			- SELECT p.id, p.product_name,p.price AS Price,u.name AS Users,l.name AS Location, c.name AS Category
+			   FROM Product p
+			   JOIN User u ON p.user_id = u.user_id 
+			   JOIN Location l ON p.location_id = l.location_id
+			   JOIN Category c ON p.category_id = c.category_id;
+		- List active user's active products (That show all product details, including location name, category and user details
+			- SELECT p.id, p.product_name,p.price AS Price,u.name AS Users,u.email AS Email,l.name AS Location, c
+			   .name AS Category FROM Product p
+			   JOIN User u ON p.user_id = u.user_id 
+			   JOIN Location l ON p.location_id = l.location_id
+			   JOIN Category c ON p.category_id = c.category_id WHERE p.status = 'A';
+		- Total products of each users
+			- SELECT u.name AS Name,GROUP_CONCAT(p.product_name) AS 'Product Name' 
+			  FROM Product p 
+			  JOIN User u ON p.user_id = u.user_id GROUP BY u.user_id;
+		- List user have total product post more than 2
+			- SELECT GROUP_CONCAT(p.product_name) AS 'Product Name',COUNT(p.product_name)
+			   AS 'Total Product',u.name AS User FROM Product p 
+			   JOIN User u ON u.user_id = p.user_id GROUP BY p.user_id HAVING COUNT(p.product_name) >=2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

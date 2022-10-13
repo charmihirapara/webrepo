@@ -1,0 +1,9 @@
+Hello Everyone 
+Today time is 3:56 [06/10/2022]
+{Git practice}
+<<<<<<< HEAD
+=======
+
+Make some changes for check before commiting files
+Thank you !!!
+>>>>>>> dev
