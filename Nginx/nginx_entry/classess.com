@@ -3,7 +3,7 @@ server {
 	listen [::]:80;
 
 
-	root /home/aum/Staff/Charmi/web/classess.com/;
+	root /home/aum/web/charmi_repository/Nginx/classess.com/;
 
 	index php1_c.php  index.html index.htm index.nginx-debian.html;
 

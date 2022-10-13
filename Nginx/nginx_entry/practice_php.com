@@ -3,7 +3,7 @@ server {
 	listen [::]:80;
 
 
-	root /home/aum/Staff/Charmi/web/practice_php.com;
+	root /home/aum/web/charmi_repository/Nginx/practice_php.com/;
 
 	index test.php oop1_class.php index.html index.htm index.nginx-debian.html;
 
