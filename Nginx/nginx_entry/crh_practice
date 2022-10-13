@@ -33,7 +33,7 @@ server {
 	#
 	# include snippets/snakeoil.conf;
 
-	root /home/aum/web/charmi_repository/Nginx/;
+	root /home/aum/web/charmi_repository/Nginx;
 
 	# Add index.php to the list if you are using PHP
 	index index.php  index.html index.htm index.nginx-debian.html;
