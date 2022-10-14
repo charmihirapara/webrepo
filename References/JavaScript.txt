@@ -34,3 +34,41 @@ JavaScript 07/10/2022
 	- Using send() we can send our request to file
 	- Using onload() we can catch the response to it
 		- this.responseXML -> It give response
+
+14/10/2022 :
+	Ajax
+	- readystate : it is hold state of XMLHttpRequest
+		0: request not initialized
+		1: server connection established
+		2: request received
+		3: processing request
+		4: request finished and response is ready
+	- onreadystatechange() : this is function when state is change this function is call
+	- status : It's hold some Text of state
+		200: "OK"
+		403: "Forbidden"
+		404: "Page not found"
+	- statusText  : Returns the status-text (e.g. "OK" or "Not Found")
+
+	Jquery :
+	- $(document).ready()
+	- Selecting Elements
+	- Selections
+	- CSS, Styling, Dimensions
+	- Utility Methods
+		- trim(),each(),inArray(),extend(),poxy() etc..
+
+	[AJAX]
+	- load(<file_name>)
+	- get & post method
+
+	- Third Party Plugins
+		Datepicker
+
+
+
+
+
+
+
+

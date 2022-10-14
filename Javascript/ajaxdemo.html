@@ -2,13 +2,168 @@
 <html>
 	<head>
 		<title>Ajax-Practice Demo</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src=
+		"https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" >
+    	</script>
+    	<script src=
+		"https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" >
+    	</script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<h2 style="text-align:center">Ajax Demo</h2>
-		<button type="button" onclick="myAjaxFunc()">Click Me to Ajax Practice</button>
-		<p id="demo"></p>
+		<h1 style="text-align:center">Ajax Demo</h1><br>
+		<button type="button" onclick="myAjaxFunc()" class="btn btn-success" style="margin-left: 20px;">Ajax Practice</button>
+		<button type="button" id="btnclick" class="btn btn-primary" style="margin-left: 20px;">Jquery Practice</button>
+		<button type="button" id="slideupdown" class="btn btn-success" style="margin-left: 20px;">Text SlideUp/SlideDown</button>
+		<button type="button" id="animate" class="btn btn-primary" style="margin-left: 20px;">Make Animation</button>
+		<button type="button" id="get_content" class="btn btn-success" style="margin-left: 20px;">Get Content Using Ajax[Jquery]</button>
+		<button type="button" id="gett" class="btn btn-primary" style="margin-left: 20px;">Get Content $get[Jquery]</button>
+		<button type="button" id="postt" class="btn btn-success" style="margin-left: 20px;">Content $post[Jquery]</button><br>
+		
+		<p id="slide" style="margin-left: 23%;">This Is Text For Slide Up/ Slide Down</p>
+		<p id="demo" style="margin-left: 20px;"></p>
+		<div class="animate_div" style="background:#98bf21;height:100px;width:100px;position:fixed;margin-left: 39%;"></div>
+		<div class="get_content_div" style="margin-left: 51%;"></div>
+		Date : <input type="text" id="my_date_picker" style="margin-top: 10%;">
 	</body>
 </html>
 
-<script src="ajax.js"></script>
 
+<script type="text/javascript">
+//JAVASCRIPT	
+function myAjaxFunc()
+{
+	const xhttp = new XMLHttpRequest();
+
+	//------------Get Content From Simple File Using AJax
+	xhttp.open("GET", "ajaxtext.php", true);
+	xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	xhttp.send();	
+	
+	xhttp.onload = function()
+	{
+		document.getElementById("demo").innerHTML = this.responseText+"Open Console";
+		console.log(this.responseText);
+	}
+
+	//--------------Json Data Using Ajax
+	// xhttp.open("GET", "https://dummyjson.com/products/1", true);
+	// xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	// xhttp.send();
+	// xhttp.onreadystatechange = function()
+	// {
+	// 	if(xhttp.readyState == 4)
+	// 	{
+	// 		var jsonObj = JSON.parse(xhttp.responseText);
+	// 		document.getElementById("demo").innerHTML = jsonObj.price;
+	// 		console.log(jsonObj);
+	// 	}
+	// }
+
+	//--------------Ajax Using Jquery
+	// $.ajax({
+	//         url: "ajaxtext.php",
+	//         type: "get",
+	//         success: function (response) {
+
+	//            // You will get response from your PHP page (what you echo or print)
+	//  			console.log("Ajax File Calling.. JQUERY");
+	//  			document.getElementById("demo").innerHTML = "Open Console";
+	//         },
+	//         error: function(jqXHR, textStatus, errorThrown) {
+	//            console.log(textStatus, errorThrown);
+	//         }
+	//     });
+}
+</script>
+<script type="text/javascript">
+	//Jquery
+	$(document).ready(function(){
+		// $(window).resize(function(){
+		// 	alert("Alert Box Fire Using Resize");
+		// });
+		// $(window).scroll(function(){
+		// 	alert("Alert Box Fire Using Scroll");
+		// });
+		$("#btnclick").click(function(){
+			alert("Alert Box Fire Using Jquery");
+		});
+
+
+		// $("button").on
+		// ({
+		// 	click : function(){
+		// 		console.log("Click on Button")
+		// 	},
+		// 	hover : function(){
+		// 		alert("Hover On Button");
+		// 	}	
+		// });
+
+		// $("p").on("click", function(){});
+
+		//Chaining
+		$("#slideupdown").click(function(){
+			$("#slide").css("color", "Green").css("font-size","15px").slideUp(1000).slideDown(1000);
+		});
+
+		//Animate
+		$("#animate").click(function(){
+			$(".animate_div").animate({height: '300px', opacity: '0.4'}, "slow");
+			$(".animate_div").animate({width: '300px', opacity: '0.8'}, "slow");
+			$(".animate_div").animate({height: '100px', opacity: '0.4'}, "slow");
+			$(".animate_div").animate({width: '100px', opacity: '0.8'}, "slow");
+
+		});
+
+		// Jquery Ajax
+		$("#get_content").click(function(){
+			$(".get_content_div").load("ajaxtext.txt");
+		});
+
+		//Jquery Ajax Using get() Method
+		$("#gett").click(function(){
+			$.get("ajaxtext.txt", function(data, status){
+				alert("Data:"+data+"\n Status:"+status);
+				console.log("Data:"+data);
+				console.log("Status:"+status);
+			});
+			$(".get_content_div")
+		});
+
+		//Jquery Ajax Using post() Method
+		// $("#postt").click(function(){
+		// 	$.post(
+		// 		"ajaxtext.php",
+		// 		{
+		// 			name : "Charmi",
+		// 			surname : "Hirapara"
+		// 		},
+		// 		function(data)
+		// 		{
+		// 			console.log(data);
+		// 		});
+		// });
+
+		$("#postt").click(function(){
+			var name = "ABC";
+			console.log("yess");
+			$.ajax({
+				url : "ajaxtext.php",
+				type : "POST",
+				data : {name:name},
+				success : function(data){
+					console.log("Post Method Work");
+				}
+			});
+		});
+	});
+</script>
+<script type="text/javascript">
+	$(function(){
+		$("#my_date_picker").datepicker();
+	});
+</script>

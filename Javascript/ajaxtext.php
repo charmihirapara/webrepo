@@ -1,3 +1,7 @@
 <?php
- echo "For Ajax Content";
+if (isset($_POST['name'])) 
+{
+    $name = $_POST['name'];
+    echo 1;
+}
 ?>
