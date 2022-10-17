@@ -1,0 +1,73 @@
+
+17/10/2022 : Monday
+    - Installation of Twig [Terminal]
+        - Install Composer --> install composer
+        - Install Twig --> composer require "twig/twig:^3.0"
+
+    - Introduction to Twig
+    [ALL IN HTML FILE] :
+
+        * Global variables : _self, _context, _charset
+        * set variables :
+            - {% set foo = 'abc' %}
+        * Filters :
+            - we can use multiple using pipe [|] sign
+            - {{ list|join(', ') }}
+            - {% apply upper %}
+                text text text
+              {% endapply %}
+        * Functions :
+            {{ range(...) }}, {{ min(,,) }}, {{ max(,,) }}
+        * Control Structure : if|for
+            {% if users|length > 0 %}
+                <ul>
+                    {% for user in users %}
+                        <li>{{ user.username|e }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        * Comments :
+            {#
+            ..
+            ...
+            #}
+        * Include other templates :
+            {{ include('abc.html') }}
+
+        * Templates of Inheritance
+            - Here we have to define block in file..
+            - we can extend one file in another file like {{ extends "abc.html" }}
+                and here we can access any block of perent file using {{ parent() }}
+            - we can create one block :
+                Example :
+                    {% block title %}
+                        ...
+                    {% endblock %}
+                    {% block head %}
+                        ...
+                    {% endblock %}
+    [ALL IN PHP FILE]
+
+        * Load our Templates :
+            -   $loader = new \Twig\Loader\FilesystemLoader('/path/to/templates');
+                $twig = new \Twig\Environment($loader);
+        * Render our Templates :
+            - echo $twig->render('index.html', ['the' => 'variables', 'go' => 'here']);
+        * Render via Block
+            - echo $template->renderBlock('block_name', ['the' => 'variables', 'go' => 'here']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
