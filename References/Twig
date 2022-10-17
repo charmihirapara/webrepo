@@ -56,6 +56,63 @@
         * Render via Block
             - echo $template->renderBlock('block_name', ['the' => 'variables', 'go' => 'here']);
 
+*********************  Sublime Text Editor has some twig settings for syntax : *********************
+        $ cd ~/.config/sublime-text/Packages/
+        $ git clone https://github.com/Anomareh/PHP-Twig.tmbundle.git PHP-Twig
+        $ mv PHP-Twig/Syntaxes/* PHP-Twig/
+
+****************************************************************************************************
+
+    - Create One Project Using twig template
+        - First Create bootstrap file in Twig Directory
+        - After create onr helloworld.php file in Twig Directory
+        - Create one Directory name is template which store the all .html.twig files
+            * In Bootstrap file has :
+                 <?php
+                    // Load our autoloader
+                    require_once __DIR__.'/vendor/autoload.php';
+
+                    // Specify our Twig templates location
+                    $loader = new \Twig\Loader\FilesystemLoader(__DIR__ . '/templates');
+
+                    // Instantiate our Twig
+                    $twig = new \Twig\Environment($loader);
+                ?>
+            * In helloworld.php file has :
+                 <?php
+                    require_once __DIR__.'/bootstrap.php';
+
+                    $parameters = [
+                    'my_var' => 'Hello world !!!',
+                    'name' => 'Charmi ',
+                    'surname' => ' Hirapara'
+                    ];
+
+                    // Render our view
+                    echo $twig->render('helloworld.html.twig', $parameters);
+                ?>
+            * helloworld.html.twig file has :
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <title>Twig - Simple file</title>
+                </head>
+                <body>
+                        <h2>{{ name ~ surname }}</h2>
+                        <h5>{{ my_var }}</h5>
+                        {% if my_var == 'Hello world !!!' %}
+                        <h1>Yes</h1>
+                        {% endif %}
+                </body>
+                </html>
+
+
+
+
+
+
 
 
 

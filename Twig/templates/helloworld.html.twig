@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Twig - Simple file</title>
+</head>
+<body>
+		<h2>{{ name ~ surname }}</h2>
+		<h4>{{ my_var }}</h4>
+		<h4>{{ user.name }}</h4>
+		
+		{# Conditional Structure #}
+		{% if my_var == 'Hello world !!!' %}
+		<h1>Yess</h1>
+		{% endif %}
+
+		{# TAG #}
+		{% do 1 + 2 %}
+		{% apply upper %}
+		Yes
+		{% endapply %}
+		<br>
+		{# autoescape #}
+		{% for users in user %}{{ users }}{% endfor %}
+		<br>
+
+</body>
+</html>
+
