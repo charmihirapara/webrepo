@@ -1,6 +1,7 @@
  <?php
 
  // Load our autoloader
+ use Twig\Extra\Cache\CacheExtension;
  require_once __DIR__.'/vendor/autoload.php';
 
  // Specify our Twig templates location
@@ -8,4 +9,5 @@
 
  // Instantiate our Twig
  $twig = new \Twig\Environment($loader);
+ 
 ?>

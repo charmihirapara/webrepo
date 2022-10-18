@@ -108,8 +108,85 @@
                 </body>
                 </html>
 
+18/10/2022 : Tuesday
+Tags :
+    - apply : Whenever we have to modify or apply like[upper case, lower case] on string we can using apply using | pipe sign
+            {% apply upper %} This is Text {% endapply %}
+    - block : Here we can definr different blocks like [title, body, footer, head]
+            {% block title %} This is title {% endblock %}
+        - Here we can print it -> {{ block('title') }}
+    - do : Like Regular Expression Dosen't Print Anything
+    - flush : flush output of the buffer
+    - for : Itls like loop
+        Variable	Description
+            loop.index	The current iteration of the loop. (1 indexed)
+            loop.index0	The current iteration of the loop. (0 indexed)
+            loop.revindex	The number of iterations from the end of the loop (1 indexed)
+            loop.revindex0	The number of iterations from the end of the loop (0 indexed)
+            loop.first	True if first iteration
+            loop.last	True if last iteration
+            loop.length	The number of items in the sequence
+            loop.parent	The parent context
+    - if : Conditional Statements
+            {% if user.name == 'geeta ' %}
+                <p>If Condition True [ {{user.name}} ]</p>
+            {% endif %}
+    - set : set the value of the variables
+        {% set var1 = 'value1' %} {{ var1 }}
+    - verbatim : It return raw text means that which we have to write that is return
+        {% verbatim %}
+			<ul>
+			    {% for users in user %}
+			        <li>{{ users }}</li>
+			    {% endfor %}
+			  </ul>
+		{% endverbatim %}
+    - with : it's define local varible means it's make scope of the variables
+        {% with { foo: 42 } %}
+            {{ foo }} {# foo is 42 here #}
+        {% endwith %}
 
-
+- Filters :
+    - abs : return positive number | Absoulate value
+    - batch : Arrange the data with given parameters, return the value which is null in list
+            batch(3, 'No Item') : 3 is how many columns & 'No Item'  wrote where null value
+    - capitalize : return first charector capital
+    - column : return specific column from array
+    - convert_encoding : convert the data to encode
+    *- country_name : give country name of given short name
+    *- currency_name : Return currence name of given by code
+    *- currency_symbol : Return symbol
+    - date : return date
+    - date_modify : we can modify date
+    - default : Here we can define default value of variable
+    - filter : we have to write condition than Return filter it
+    - first : Returns first elements of string or Array
+    - last : Returns last elements of string or Array
+    - format - It's return specific string
+    *- format_currency : convert it that
+    *- format_datetime : convert date & time
+    *- format_number : Formate the number
+    *- html_to_markdown
+    *- inline_css : apply inline css within apply block
+    - join : it's can join with specific charecter
+    - json_encode() : Make json data to encode
+    - map : map the array to String
+    - merge : merge the existing string
+    - number_format : make number format perfectly
+    - reduce : addition number
+    - lower : translate lower case
+    - upper : translate upper case
+    - reverse : revrse the String
+    - replace : replace specific String
+    - round : round the number
+    - slice : return the given parameters
+        slice(0,2): 0 is Strting Index & 2 is Length of string
+    - sort : sort the data
+    - split : return the array
+    - title : return first character of words in capital
+    - trim : remove white space of string
+    *- u:
+    - url_encode : Make URL Encode
 
 
 

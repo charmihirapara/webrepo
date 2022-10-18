@@ -1,29 +1,224 @@
+{# {% extends "block.html.twig" %} #}
+{# {% use "block.html.twig" with block as alias} %} #}
+{# {% embed "block.html.twig" %} #}
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Twig - Simple file</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>{% block title %}{{parameters.title}} | Simple file{% endblock %}</title>
 </head>
-<body>
-		<h2>{{ name ~ surname }}</h2>
-		<h4>{{ my_var }}</h4>
-		<h4>{{ user.name }}</h4>
-		
-		{# Conditional Structure #}
-		{% if my_var == 'Hello world !!!' %}
-		<h1>Yess</h1>
-		{% endif %}
 
-		{# TAG #}
-		{% do 1 + 2 %}
-		{% apply upper %}
-		Yes
-		{% endapply %}
-		<br>
-		{# autoescape #}
-		{% for users in user %}{{ users }}{% endfor %}
-		<br>
+<body>
+	<div class="row">
+		{# style="background-color : #ccf9f6" #}
+		<div class="col-md-4" style="background-color : #ccf9f6">
+			<h1 align="center">TAGS</h1><hr>
+			<h3>Apply : </h3>
+			<p>
+				{% apply upper %}
+				This is uppercase
+				{% endapply %}
+			</p>
+
+			<h3>Block :</h3>
+			<p>This is Cuurent Page Title : {{ block('title') }}</p>
+			<p>This is Another Page Title : {{ block("title", "block.html.twig") }}</p>
+			{% if block('title') is defined %}
+			<p>If Condition true [Title block is defines]</p>
+			{% endif %}
+
+			{# <h2>Cache, Embeded, Include, Extends, Sandbox, Use </h2> Not Working #}
+			{# <h2>Deprecated </h2> Not Working | Not Understand #}
+
+			<h3>Do : </h3>	
+			<p>Like Regular Expression</p>
+			{% do 1 + 2 %}
+
+			<h3>Flush : </h3>
+			<p>Flush Output Of Buffer</p>
+			{% flush %}
+
+			<h3>For : </h3>
+			<ul>
+				 PRINT ONLY KEYS 
+				{% for users in user|keys  %} <li>{{ users }}</li> {% endfor %}
+					<br>
+				PRINT NUMBER OF RECORDS
+				{% for users in user|slice(0, 2)  %} <li>{{ users }}</li> {% endfor %}
+					<br>
+				PRINT VALUE WITH KEY NAME
+				{% for key,users in user %} <li>{{ key }} : {{ users }}</li> {% endfor %}
+			</ul> 
+			<ul>
+				{% for i in 0..10 %}
+				    <li>{{ loop.index0 }}  * </li> 
+				{% endfor %}
+			</ul> 
+			<ul>
+			    {% for user in users %}
+			        <li>{{ user.username|e }}</li>
+			    {% else %}
+			        <li><em>no user found</em></li>
+			    {% endfor %}
+			</ul>
+
+			<h3>IF : </h3>
+			{% if user.name == 'geeta ' %}
+				<p>If Condition True [ {{user.name}} ]</p>
+			{% endif %}
+
+			<h3>Set : </h3>
+			{% set var1 = 'value is set'%}
+			{{var1}}
+
+			<h3>Verbatim : </h3>
+			{% verbatim %}
+				<ul>
+				    {% for users in user %}
+				        <li>{{ users }}</li>
+				    {% endfor %}
+				</ul>
+			{% endverbatim %}
+
+			<h3>With : </h3>
+			{% with { foo: 42 } %}
+			    {{ foo }} {# foo is 42 here #}
+			{% endwith %}
+		</div>
+		{# style="background-color : #ccf9e3" #}
+		<div class="col-md-4" style="background-color : #ccf9e3">
+			<h1 align="center">FILTERS</h1><hr>
+			<h3>Abs : </h3>
+			{% set number = -100 %}
+			{{ number|abs }}
+
+			<h3>Batch : </h3>
+			{% set items = ['a', 'b', 'c', 'd'] %}
+			<table border="1">
+			    {% for row in items|batch(3, 'No item') %}
+			        <tr>
+			            {% for column in row %}
+			                <td>{{ column }}</td>
+			            {% endfor %}
+			        </tr>
+			    {% endfor %}
+			</table>
+
+			<h3>Capitalize : </h3>
+			{{ 'capitalize Example'|capitalize }}
+
+			<h3>Column : </h3>
+			{% set items = [
+					{ 'fruit' : 'apple', 'colour' : 'red'}, 
+					{'fruit' : 'orange', 'colour' : 'orange' }] %}
+			{% set fruits = items|column('fruit') %}
+			{{ fruits }}
+
+			{# <h2>Country Name</h2>
+			{{ 'FR'|country_name }} 
+			{{ 'EUR'|currency_name }} #}
+
+			<h3>Date : </h3>
+			{{ "now"|date("m/d/Y") }}<br>
+			{{ post.published_at|date("F jS \\a\\t g:ia") }}
+
+			<h3>Date Modify :</h3>
+			{{ post.published_at|date_modify("+5 day")|date("m/d/Y") }}
+
+			<h3>Default : </h3>
+			{{ var|default('var is not defined') }}
+
+			<h3>Filter : </h3>
+			{% set size = [30, 32, 34, 36, 40, 42] %}
+			{{ size|filter(v => v > 38)|join(',') }}
+
+			<h3>First : </h3>
+			{% set array = [2,4,6,8] %}
+			{{ array|first }}
+
+			<h3>Last : </h3>
+			{% set array = "Charmi" %}
+			{{ array|last }}
+
+			<h3>Format : </h3>
+			{{ "I Like %s & %s"|format("Apple","Mango") }}
+
+			<h3>Join : </h3>
+			{% set joinn = [1,2,3,4,5] %}
+			{{ joinn|join(' | ') }}
+
+			<h3>Length : </h3>
+			{% set len = 'value' %}
+			{{ len|length }}
+
+			<h3>Lower : </h3>
+			{% apply lower %}
+			This Is Lowercase
+			{% endapply %}
+
+			<h3>Upper : </h3>
+			{{ "This is Uppercase"|upper  }}
+
+			<h3>Map : </h3>
+			{% set arr = [
+			{'name' : 'Abc', 'age':20},
+			{'name' : 'Xyz', 'age':22}
+			] %}
+
+			{{ arr|map(p => "#{p.name} #{p.age}")|join(',')  }}
+			{# {{ arr|map((value, key) => "#{key} #{value}")|join(',')  }} #}
+
+			<h3>Merge  : </h3>
+			{% set mer = [1,2] %}
+			{% set mer = mer|merge([3,4]) %}
+			{{ mer|join(',') }}
+
+			<h3>Number Format : </h3>
+			{{ 200.35|number_format }}
+			{{ 9800.333|number_format(2, '.', ',') }}
+
+			<h3>Reduce : </h3>
+			{% set numbers = [1, 2, 3] %}
+			{{ numbers|reduce((carry, v) => carry + v, 10) }}
+
+			<h3>Replace : </h3>
+			{{ "I like %this% and %that%."|replace({'%this%': fruit, '%that%': "oranges"}) }}
+
+			<h3>Reverse : </h3>
+			{% set rev = 1234 %}
+			{{ rev|reverse }}
+
+			<h3>Round : </h3>
+			{{ 122.50|round }}
+
+			<h3>Slice : </h3>
+			{% set sli = [1,2,3,4,5] %}
+			{{ sli|slice(0,2) }}
+
+			<h3>Split : </h3>
+			{% set spl = "1,2,3"|split(',') %}
+			{{ spl }}
+
+			<h3>Title : </h3>
+			{{ 'my first car'|title }}
+
+			<h3>Url Encode :</h3>
+			{{ "string with spaces"|url_encode }}
+		</div>
+		{# style="background-color: #e2f9cc" #}
+		<div class="col-md-4" style="background-color: #e2f9cc">
+			<h1 align="center">FUNCTIONS</h1><hr>
+		</div>
+	</div>
+
+
+		{# <h2>{{ name ~ surname }}</h2>
+		<h4>{{ my_var }}</h4> #}
+
 
 </body>
 </html>

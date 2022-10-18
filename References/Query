@@ -26,9 +26,25 @@ Today :
     - Tags, Filters
     - Functions, Test, Operators
 
+18/10/2022 - Tuesday
+Yesterday :
+    [08:00]: Twig
+    [04:00] - Introduction & Installation [brifely check control structure, loop comments, Loader & render Class]
+    [01:30] - Crate Bootstrap File and twig Template for demo
+    [02:00] - Tag Refering with Practice
+Today :
+    [08:00] : Twig
+        - Tags
+        - Filters
+        - Functions
+        - Tests
+        - Operators
+
 
 QUERY :
 - POST method in Jquery Ajax
 - ESCAPE in Twig
-- Extends
-- Macros
+- Extends, Use
+- Macros, Deprecated, Sandbox
+* Filters
+- image_uri

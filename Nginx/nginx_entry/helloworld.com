@@ -7,7 +7,7 @@ server {
 
 	index helloworld.php  index.html index.htm index.nginx-debian.html;
 
-	server_name helloworld.com www.helloworld.com;
+	server_name twig.com www.twig.com;
 
 	location / {
 		try_files $uri $uri/ =404;
