@@ -188,16 +188,59 @@ Tags :
     *- u:
     - url_encode : Make URL Encode
 
+19/10/2022 : Wednesday
+Functions :
+    - attributes : Example
+        {% set style='col-md-6' %}
+        <div {{ attributes.addClass('style') }}>..</div>
+    - block : Example
+        <title>{% block title}..{% endblock %}</title>
+    - constant : we can define constant using constant()
+    - cycle : it prints value of array [multiple time]
+        Example : {% set fruits = ['apple', 'orange', 'citrus'] %}
+                    {% for i in 0..10 %}
+                        {{ cycle(fruits, i) }}
+                    {% endfor %}
+            - parameters : fruits : what we have to print
+                           i : how many times
+    - dump : it's use for dump templates variable
+    - random : Return random values
+        - Example : {{ random(50, 100) }}    {# example output: 63 #}
+    - source(file_name) : return that file of content
+    - template_from_string(string + variable_name) : return specific string
 
+tags :
+    - constant : variable is constant or not
+    - define : variable is define or not
+    - devisible by(3) : variable is devisible by or not
+    - empty : variable is empty or not
+    - even : variable value is even or not
+    - odd : variable value is even or not
+    - iterable : variable is array or not
+    - null : variable is null or not
+    - same as : Variable is same as another variable or not
 
-
-
-
-
-
-
-
-
+Oprators :
+    - | <pipe> : used for filter <{{ name|join(',') }}>
+    - .. : make sequnence <1..10>
+    - ~ : Used to concate the string & variable
+    - ?: It is ternary Operator Used based on condition
+    - ?? : If variable has value it's return value other wise right side message
+    - == : compare two variables
+    - != : not equal
+    - < : compare varibles , return right side value is greater that left
+    - > : compare varibles , return left side value is greater that right
+    - <= : compare varibles , return right side value is same or greater that left
+    - >= : compare varibles , return left side value is same or greater that right
+    - starts with : check string starting with given value
+    - ends with : check string ending with given value
+    - matches : use Regular Expression
+    - in : values in or not
+    - AND && : left side & right side both condition are true
+    - OR || : left side or right side one of them condition are true
+    - not : Negates Statements
+    - Arithmatic : [+, -, *, /, //, **, %]
+    - is : this is used for tests operator
 
 
 

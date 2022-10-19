@@ -19,7 +19,7 @@
  // Render our view
  echo $twig->render(
     'helloworld.html.twig', 
-     array('user'=>$user, 'parameters'=>$parameters)
+    array('user'=>$user, 'parameters'=>$parameters)
     );
  
 $twig->addExtension(new CacheExtension());

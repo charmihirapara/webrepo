@@ -1,6 +1,12 @@
 {# {% extends "block.html.twig" %} #}
 {# {% use "block.html.twig" with block as alias} %} #}
 {# {% embed "block.html.twig" %} #}
+{# {{ source('block.html.twig') }} #}
+
+{# macro import #}
+{# {% import "block.html.twig" as forms %} #}
+{% from 'block.html.twig' import input as input_field %}
+{# {% include 'block.html.twig' %} #}
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,10 +19,11 @@
 </head>
 
 <body>
-	<div class="row">
+	
+	<div class="row" style="margin : 30px">
 		{# style="background-color : #ccf9f6" #}
 		<div class="col-md-4" style="background-color : #ccf9f6">
-			<h1 align="center">TAGS</h1><hr>
+			<h1 align="center">TAGS</h1><hr style="border-top: 1px solid black;">
 			<h3>Apply : </h3>
 			<p>
 				{% apply upper %}
@@ -89,9 +96,10 @@
 			    {{ foo }} {# foo is 42 here #}
 			{% endwith %}
 		</div>
+		
 		{# style="background-color : #ccf9e3" #}
 		<div class="col-md-4" style="background-color : #ccf9e3">
-			<h1 align="center">FILTERS</h1><hr>
+			<h1 align="center">FILTERS</h1><hr style="border-top: 1px solid black;">
 			<h3>Abs : </h3>
 			{% set number = -100 %}
 			{{ number|abs }}
@@ -209,9 +217,136 @@
 			<h3>Url Encode :</h3>
 			{{ "string with spaces"|url_encode }}
 		</div>
+
 		{# style="background-color: #e2f9cc" #}
-		<div class="col-md-4" style="background-color: #e2f9cc">
-			<h1 align="center">FUNCTIONS</h1><hr>
+		{% set style = ['col-md-4'] %}	
+
+		<div class="col-md-4" {{ attributes.addClass(style) }} style="background-color: #e2f9cc">
+			<h1 align="center">FUNCTIONS</h1><hr style="border-top: 1px solid black;">
+			{# {{ constant('charmi::CONSTANT_NAME') }} #}
+
+			<h3>Cycle :</h3>
+			{% set start_year = date() | date('Y') %}
+			{% set end_year = start_year + 5 %}
+
+			{% for year in start_year..end_year %}
+			    {{ cycle(['odd', 'even'], loop.index0) }}
+			{% endfor %}
+
+			<h3>Random :</h3>
+			{{ random(50, 100) }}
+
+			<h3>Range :</h3>
+			{% for i in range(0, 6, 2) %}
+			    {{ i }},
+			{% endfor %}
+
+			<h1 align="center">Tests</h1><hr style="border-top: 1px solid black;">
+			<h3>Constants :</h3>
+			<h3>Define :</h3>
+			<h3>Devisible By :</h3>
+			<h3>Empty :</h3>
+			<h3>Even/Odd :</h3>
+			<h3>Iterable :</h3>
+			<h3>NULL :</h3> 
+			<h3>Same As :</h3>
+
+			<h1 align="center">Opearator</h1><hr style="border-top: 1px solid black;">
+			<h3>* Miscellaneous operators</h3>
+			<h3>| _pipe</h3>
+				{% verbatim %}
+					{{ name | join(',') }}
+				{% endverbatim %}
+
+			<h3>..</h3>
+				{% verbatim %}
+					{{ 1..10 }}
+				{% endverbatim %}
+
+			<h3>~</h3>
+				{% verbatim %}
+					{{ "Hello " ~ profile.firstName ~ "!" }}
+				{% endverbatim %}
+			<h3>?:</h3>
+				{% verbatim %}
+					{{ variable ? variable : 'Does not exist' }}
+				{% endverbatim %}
+			<h3>??</h3>
+				{% verbatim %}
+					{{ variable ?? "value does not exist or is null" }}
+				{% endverbatim %}
+			<h3>* Comparison operators</h3>
+			<h3>==</h3>
+				{% verbatim %}
+					{% if value1 == value2 %}
+				{% endverbatim %}
+			<h3>!=</h3>
+				{% verbatim %}
+					{% if value1 != value2 %}
+				{% endverbatim %}
+			<h3> < </h3>
+				{% verbatim %}
+					{% if value1 < value2 %}
+				{% endverbatim %}
+			<h3><=</h3>
+				{% verbatim %}
+					{% if value1 <= value2 %}
+				{% endverbatim %}
+			<h3>></h3>
+				{% verbatim %}
+					{% if value1 > value2 %}
+				{% endverbatim %}
+			<h3>>=</h3>
+				{% verbatim %}
+					{% if value1 >= value2 %}
+				{% endverbatim %}
+			<h3>Starts with</h3>
+				{% verbatim %}
+					{% if 'BranchCMS' starts with 'Bran' %}
+				{% endverbatim %}
+			<h3>Ends with</h3>
+				{% verbatim %}
+					{% if 'BranchCMS' ends with 'CMS' %}
+				{% endverbatim %}
+			<h3>Matches</h3>
+				{% verbatim %}
+					{% if phone matches '/^[\\d\\.]+$/' %}
+				{% endverbatim %}
+			<h3>* Containment operators</h3>
+			<h3>In</h3>
+				{% verbatim %}
+					{% if 1 in [1, 2, 3] %}
+				{% endverbatim %}
+			<h3>* Logic operators</h3>
+			<h3>AND | &&</h3>
+				{% verbatim %}
+					{% if 1 > 2 and 3 == 3 %}<br>
+					{% if 1 > 2 && 3 == 3 %}
+				{% endverbatim %}
+			<h3>OR | ||</h3>
+				{% verbatim %}
+					{% if 1 > 2 or 3 == 3 %}<br>
+					{% if 1 > 2 || 3 == 3 %}
+				{% endverbatim %}
+			<h3>NOT</h3>
+				{% verbatim %}
+					{% if not 'Bear' ends with 'x' %}
+				{% endverbatim %}
+			<h3>* Math Operators</h3>
+			<h3>Arithmatic</h3>
+				{% verbatim %}
+					{{ + - / % // * ** }}
+					{{ 2 ** 3 }} = 8
+				{% endverbatim %}
+			<h3>* Test Operators</h3>
+			<h3>IS</h3>
+				{% verbatim %}
+					{% if number is odd %}	
+				{% endverbatim %}
+
+			{# <p>{{ form.input('username') }}</p> #}
+			<p>{{ input_field('username') }}</p>
+			
 		</div>
 	</div>
 
