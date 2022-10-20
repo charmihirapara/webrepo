@@ -1,1 +1,28 @@
  
+2022/10/20 16:00:36 [error] 25847#25847: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  Array to string conversion in /home/aum/web/charmi_repository/Twig/vendor/twig/twig/src/Environment.php(358) : eval()'d code on line 341PHP message: PHP Warning:  Array to string conversion in /home/aum/web/charmi_repository/Twig/vendor/twig/twig/src/Environment.php(358) : eval()'d code on line 505PHP message: PHP Warning:  Array to string conversion in /home/aum/web/charmi_repository/Twig/vendor/twig/twig/src/Environment.php(358) : eval()'d code on line 514" while reading response header from upstream, client: 192.168.100.91, server: twig.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "twig.com"
+2022/10/20 16:00:36 [error] 25847#25847: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/helloworld.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/helloworld.php on line 25" while reading upstream, client: 192.168.100.91, server: twig.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "twig.com"
+2022/10/20 16:00:38 [error] 25848#25848: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "mysqli_connect" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 9" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "www.phpproject.com"
+2022/10/20 16:02:54 [error] 26315#26315: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "mysqli_connect" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 9" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "www.phpproject.com"
+2022/10/20 16:02:56 [error] 26314#26314: *4 FastCGI sent in stderr: "PHP message: PHP Warning:  Array to string conversion in /home/aum/web/charmi_repository/Twig/vendor/twig/twig/src/Environment.php(358) : eval()'d code on line 341PHP message: PHP Warning:  Array to string conversion in /home/aum/web/charmi_repository/Twig/vendor/twig/twig/src/Environment.php(358) : eval()'d code on line 505PHP message: PHP Warning:  Array to string conversion in /home/aum/web/charmi_repository/Twig/vendor/twig/twig/src/Environment.php(358) : eval()'d code on line 514" while reading response header from upstream, client: 192.168.100.91, server: twig.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "twig.com"
+2022/10/20 16:02:56 [error] 26314#26314: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/helloworld.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/helloworld.php on line 25" while reading upstream, client: 192.168.100.91, server: twig.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "twig.com"
+2022/10/20 16:03:11 [error] 26314#26314: *4 FastCGI sent in stderr: "PHP message: PHP Warning:  Array to string conversion in /home/aum/web/charmi_repository/Twig/vendor/twig/twig/src/Environment.php(358) : eval()'d code on line 341PHP message: PHP Warning:  Array to string conversion in /home/aum/web/charmi_repository/Twig/vendor/twig/twig/src/Environment.php(358) : eval()'d code on line 505PHP message: PHP Warning:  Array to string conversion in /home/aum/web/charmi_repository/Twig/vendor/twig/twig/src/Environment.php(358) : eval()'d code on line 514" while reading response header from upstream, client: 192.168.100.91, server: twig.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "twig.com"
+2022/10/20 16:03:11 [error] 26314#26314: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/helloworld.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/helloworld.php on line 25" while reading upstream, client: 192.168.100.91, server: twig.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "twig.com"
+2022/10/20 17:17:24 [error] 26315#26315: *8 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "mysqli_connect" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 9" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "www.phpproject.com"

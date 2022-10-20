@@ -110,9 +110,11 @@
 
 18/10/2022 : Tuesday
 Tags :
+
+[Always written in {% %}]
     - apply : Whenever we have to modify or apply like[upper case, lower case] on string we can using apply using | pipe sign
             {% apply upper %} This is Text {% endapply %}
-    - block : Here we can definr different blocks like [title, body, footer, head]
+    - block : Here we can define different blocks like [title, body, footer, head]
             {% block title %} This is title {% endblock %}
         - Here we can print it -> {{ block('title') }}
     - do : Like Regular Expression Dosen't Print Anything
@@ -147,6 +149,8 @@ Tags :
         {% endwith %}
 
 - Filters :
+    [Filters are always used with pipe <|> sign]
+
     - abs : return positive number | Absoulate value
     - batch : Arrange the data with given parameters, return the value which is null in list
             batch(3, 'No Item') : 3 is how many columns & 'No Item'  wrote where null value
@@ -209,7 +213,7 @@ Functions :
     - source(file_name) : return that file of content
     - template_from_string(string + variable_name) : return specific string
 
-tags :
+Tests :
     - constant : variable is constant or not
     - define : variable is define or not
     - devisible by(3) : variable is devisible by or not

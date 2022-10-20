@@ -1,0 +1,56 @@
+20/10/2022 : Thursday
+
+Quantifiers :
+    * : 0 or more
+    + : 1 or more
+    ? : 0 or 1
+
+Anchors :
+    ^ : Starting of String or Start of line in multiline pattern
+    \A : Start of String
+    $ : End of string or End of multiline pattern
+    \Z : End of String
+    \b : Word boundary
+    \B : Not word boundary
+    \< : Start of the Words
+    \> : End of the Words
+
+Group and Ranges :
+    . : any character except with new line
+    (a|b) : a or b
+    (...) : Group
+    (?:..)  : Non-capturing group
+    [abc] : a or b or c
+    [^abc] : Not [a or b or c]
+    [a-q] : Lowercase letter from a to q
+    [A-Q] : Uppercase letter from A to Q
+    [0-7] : Digit from 0 to 7
+
+Pattern Modifiers :
+    g : Global match
+    i* : case-insensitive
+    m* : Multiple line
+    s* : Treat string as a Single line
+    x* : Allow Comment & Whitespace
+---- e* : Evaluate Replacement
+---- U* : Ungreedy pattern
+
+Charecter Classes :
+    \c : Control charecter
+    \s : White Space
+    \S : Not White Space
+    \d : Digit
+    \D : Not Digit
+    \w : Word
+    \W : Not Word
+    \x : Hexadecimal Digit
+    \O : Octal Digit
+
+Special Characters :
+    \n : New Line
+    \r : Carriage Return
+    \t : tab
+    \v : Vertical tab
+    \f : form feed
+    \xxx : Octal Charecter xxx
+    \xhh : Hex Character hh
