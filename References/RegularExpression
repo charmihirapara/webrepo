@@ -54,3 +54,33 @@ Special Characters :
     \f : form feed
     \xxx : Octal Charecter xxx
     \xhh : Hex Character hh
+
+21/10/2022 : Friday
+
+posix :
+    [:upper:] : Upper case Letters
+    [:lower:] : Lower case Letters
+    [:digits:] : Digits
+    [:alpha:] : All Letters
+    [:alnum:] : Letters & Digits
+    [:graph:] : Printed Characters
+    [:print:] : Printed Characters & Spaces
+    [:word:] : Digits , Letters & Underscore
+    [:xdigits:] : Hexadcimal Digits
+    [:punct:] : Punctuation
+    [:blank:] : Space & Tab
+    [:space:] : blank Characters
+    [:cntrl:] : Control Character
+
+Assertions :
+    * Confused
+
+
+
+
+
+
+
+
+
+
