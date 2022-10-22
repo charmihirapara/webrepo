@@ -31,6 +31,39 @@
 		$result = preg_match_all($pattern,$text);
 		echo $result;
 	?>
-
+	<h3>- preg_replace($pattern,$replacement,$text)</h3>
+	<?php 
+		$pattern = "/\s/";
+		$replace = "-";
+		$text = "Earth revolves around\nthe\tSun";
+		echo preg_replace($pattern, $replace, $text)."<br>";
+		echo str_replace(" ", "-", $text);
+	?>
+	<h3>- preg_split($pattern, $text)</h3>
+	<?php 
+		$pattern = "/[\s,]+/";
+		$text = "My favourite colors are red, green and blue";
+		$result = preg_split($pattern, $text);
+		foreach ($result as $value) 
+		{
+			echo $value."<br>";
+		}
+	?>
+	<h3>- preg_grep($pattern, $text) [Here text is in Array Form]</h3>
+	<?php 
+		$pattern = "/^j/i";
+		$text = array("Jhon Carter", "Clark Kent", "John Rambo");
+		$match = preg_grep($pattern, $text);
+		foreach ($match as $value) {
+			echo $value."<br>";
+		}
+	?>
+	<h3>- preg_replace [Word Boundary]</h3>
+	<?php
+		$pattern = '/\bcar\w*/';
+		$replacement = '<b>$0</b>';
+		$text = 'Words begining with car: cart, carrot, cartoon. Words ending with car: scar, oscar, supercar.';
+		echo preg_replace($pattern, $replacement, $text);
+	?>
 </body>
 </html>
