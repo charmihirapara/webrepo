@@ -87,7 +87,7 @@ Today :
 QUERY :
 - POST method in Jquery Ajax
 - ESCAPE in Twig
-- Extends, Use
+- Use
 - Deprecated, Sandbox
 * Filters
 - image_uri
@@ -95,3 +95,5 @@ QUERY :
 
 Solution :
 - Macros
+- Extends
+

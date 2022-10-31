@@ -10,7 +10,7 @@
 		<input type="{{ type }}" name="{{ name }}" value="30">	
 		{% deprecated 'The "welcome" macro is deprecated, use "hello" instead.' %}
 	{% endmacro %}
-
+	 <div id="content">{% block content %}{% endblock %}</div>
 	{# <p>{{ _self.input('username') }}</p> #}
 </body>
 </html
