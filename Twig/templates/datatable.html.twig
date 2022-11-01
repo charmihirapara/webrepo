@@ -1,40 +1,17 @@
 {% include 'header.html.twig' %}
-<body class="">
+<body class="content">
 	<div class="sidebar">
 	  <a class="active" href="#home">Dashboard</a>
-	  <a href="#datatable">Data Tables</a>
-	  <a href="#form">User Form</a>
+	  <a href="datatable.html.twig">Data Tables</a>
+	  <a href="#contact">Product</a>
 	</div>
+
 	{# Dashboard #}
-	<div class=" content" id="home">
+	<div class="container content" id="home">
 		<h1>Dashboard</h1><hr>
 	</div>
-    {% block form_block %}
-        <div class=" content form_content" id="form">
-            <form action="action_form.php" style="max-width:500px;margin:auto" method="post">
-              <h2>Register Form</h2>
-              <div class="input-container">
-                <i class="fa fa-user icon"></i>
-                <input class="input-field" type="text" placeholder="Username" name="name" >
-              </div>
 
-              <div class="input-container">
-                <i class="fa fa-envelope icon"></i>
-                <input class="input-field" type="email" placeholder="Email" name="email" >
-              </div>
-              
-              <div class="input-container">
-                <i class="fa fa-key icon"></i>
-                <input class="input-field" type="password" placeholder="Password" name="password" >
-              </div>
-
-              <button type="submit" class="btn" name="submit">Register</button>
-            </form>
-        </div>
-    {% endblock %}
-    
-
-	<div class=" content" id="datatable">
+	<div class="container content" id="datatable">
 	  <h2>Category</h2>            
 	  <table class="table table-hover">
 	    <thead>
@@ -142,7 +119,5 @@
 		</tbody>
 	  </table>
 	</div>	
-
-    
 </body>
 </html>

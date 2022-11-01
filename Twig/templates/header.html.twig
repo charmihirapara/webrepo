@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MySQL - Twig</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css"  href="./style.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+			 /* The side navigation menu */
+		.sidebar {
+		  margin: 0;
+		  padding: 0;
+		  width: 200px;
+		  background-color: #f1f1f1;
+		  position: fixed;
+		  height: 100%;
+		  overflow: auto;
+		}
+
+		/* Sidebar links */
+		.sidebar a {
+		  display: block;
+		  color: black;
+		  padding: 16px;
+		  text-decoration: none;
+		}
+
+		/* Active/current link */
+		.sidebar a.active {
+		  background-color: #219da7;
+		  color: white;
+		}
+
+		/* Links on mouse-over */
+		.sidebar a:hover:not(.active) {
+		  background-color: #555;
+		  color: white;
+		}
+
+		/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+		div.content {
+		  margin-left: 200px;
+		  padding: 1px 16px;
+		  height: 1000px;
+		}
+
+		/* On screens that are less than 700px wide, make the sidebar into a topbar */
+		@media screen and (max-width: 700px) {
+		  .sidebar {
+		    width: 100%;
+		    height: auto;
+		    position: relative;
+		  }
+		  .sidebar a {float: left;}
+		  div.content {margin-left: 0;}
+		}
+
+		/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+		@media screen and (max-width: 400px) {
+		  .sidebar a {
+		    text-align: center;
+		    float: none;
+		  }
+		}
+
+		.input-container {
+		  display: -ms-flexbox; /* IE10 */
+		  display: flex;
+		  width: 100%;
+		  margin-bottom: 15px;
+		}
+
+		.icon {
+		  padding: 10px;
+		  background: #219da7;
+		  color: white;
+		  min-width: 50px;
+		  text-align: center;
+		}
+
+		.input-field {
+		  width: 100%;
+		  padding: 10px;
+		  outline: none;
+		}
+
+		.input-field:focus {
+		  border: 2px solid #219da7;
+		}
+
+		/* Set a style for the submit button */
+		.btn {
+		  background-color: #219da7;
+		  color: white;
+		  padding: 15px 20px;
+		  border: none;
+		  cursor: pointer;
+		  width: 100%;
+		  opacity: 0.9;
+		}
+
+		.btn:hover {
+		  opacity: 1;
+		} 
+	</style>
+</head>
