@@ -5789,3 +5789,204 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 09:14:35 [error] 1108#1108: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  Array to string conversion in /home/aum/web/charmi_repository/Twig/vendor/twig/twig/src/Environment.php(358) : eval()'d code on line 342PHP message: PHP Warning:  Array to string conversion in /home/aum/web/charmi_repository/Twig/vendor/twig/twig/src/Environment.php(358) : eval()'d code on line 506PHP message: PHP Warning:  Array to string conversion in /home/aum/web/charmi_repository/Twig/vendor/twig/twig/src/Environment.php(358) : eval()'d code on line 515" while reading response header from upstream, client: 192.168.100.91, server: twig.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "twig.com"
+2022/11/02 09:14:35 [error] 1108#1108: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/helloworld.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/helloworld.php on line 25" while reading upstream, client: 192.168.100.91, server: twig.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "twig.com"
+2022/11/02 09:14:44 [error] 1110#1110: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 09:14:44 [error] 1110#1110: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:16:44 [error] 5536#5536: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "mvcphp.com"
+2022/11/02 10:16:46 [error] 5538#5538: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "mvcphp.com"
+2022/11/02 10:16:47 [error] 5537#5537: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "mvcphp.com"
+2022/11/02 10:16:47 [error] 5539#5539: *7 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "mvcphp.com"
+2022/11/02 10:17:01 [error] 5538#5538: *9 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "www.mvcphp.com"
+2022/11/02 10:18:01 [error] 5948#5948: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "mvcphp.com"
+2022/11/02 10:18:02 [error] 5950#5950: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "mvcphp.com"
+2022/11/02 10:18:02 [error] 5947#5947: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "mvcphp.com"
+2022/11/02 10:18:02 [error] 5949#5949: *7 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "mvcphp.com"
+2022/11/02 10:18:02 [error] 5948#5948: *9 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "mvcphp.com"
+2022/11/02 10:18:02 [error] 5948#5948: *11 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "mvcphp.com"
+2022/11/02 10:18:02 [error] 5948#5948: *13 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "mvcphp.com"
+2022/11/02 10:18:05 [error] 5948#5948: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "www.mvcphp.com"
+2022/11/02 10:18:05 [error] 5948#5948: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "www.mvcphp.com"
+2022/11/02 10:18:11 [error] 5948#5948: *19 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:11 [error] 5948#5948: *19 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *21 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *21 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *23 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *23 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *25 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *25 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *27 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *27 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *29 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *29 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *31 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *33 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *33 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *35 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:12 [error] 5948#5948: *35 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:18 [error] 5948#5948: *35 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:18 [error] 5948#5948: *35 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:20 [error] 5948#5948: *35 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:20 [error] 5948#5948: *35 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:22 [error] 5948#5948: *35 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:22 [error] 5948#5948: *35 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:23 [error] 5948#5948: *40 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:23 [error] 5948#5948: *40 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:24 [error] 5948#5948: *42 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:24 [error] 5948#5948: *42 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:24 [error] 5950#5950: *44 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:24 [error] 5950#5950: *44 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:24 [error] 5950#5950: *46 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:24 [error] 5950#5950: *46 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:24 [error] 5950#5950: *48 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:24 [error] 5950#5950: *48 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:24 [error] 5950#5950: *50 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:24 [error] 5950#5950: *50 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:24 [error] 5950#5950: *52 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:18:24 [error] 5950#5950: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/11/02 10:20:19 [error] 6110#6110: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "www.mvcphp.com"
+2022/11/02 10:20:20 [error] 6110#6110: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "www.mvcphp.com"
+2022/11/02 10:20:21 [error] 6110#6110: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/public/../vendor/autoload.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/public/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/public/index.php on line 10" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "www.mvcphp.com"
+2022/11/02 10:27:09 [error] 7095#7095: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/vendor/composer/../../core/Support/helpers.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php on line 78PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/vendor/composer/../../core/Support/helpers.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php:78
+Stack trace:
+#0 /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php(61): composerRequireed002f9897076390706a3fa3816e0b6d()
+#1 /home/aum/web/charmi_repository/php-mvc-master/vendor/autoload.php(7): ComposerAutoloaderInited002f9897076390706a3fa3816e0b6d::getLoader()
+#2 /home/aum/web/charmi_repository/php-mvc-master/public/index.php(10): require('...')
+#3 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php on line 78" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "www.mvcphp.com"
+2022/11/02 10:42:08 [error] 7393#7393: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/vendor/composer/../../core/Support/helpers.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php on line 78PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/vendor/composer/../../core/Support/helpers.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php:78
+Stack trace:
+#0 /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php(61): composerRequireed002f9897076390706a3fa3816e0b6d()
+#1 /home/aum/web/charmi_repository/php-mvc-master/vendor/autoload.php(7): ComposerAutoloaderInited002f9897076390706a3fa3816e0b6d::getLoader()
+#2 /home/aum/web/charmi_repository/php-mvc-master/public/index.php(10): require('...')
+#3 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php on line 78" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "www.mvcphp.com"
+2022/11/02 10:42:09 [error] 7393#7393: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/vendor/composer/../../core/Support/helpers.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php on line 78PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/vendor/composer/../../core/Support/helpers.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php:78
+Stack trace:
+#0 /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php(61): composerRequireed002f9897076390706a3fa3816e0b6d()
+#1 /home/aum/web/charmi_repository/php-mvc-master/vendor/autoload.php(7): ComposerAutoloaderInited002f9897076390706a3fa3816e0b6d::getLoader()
+#2 /home/aum/web/charmi_repository/php-mvc-master/public/index.php(10): require('...')
+#3 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php on line 78" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "www.mvcphp.com"
+2022/11/02 14:16:19 [error] 7395#7395: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  require(/home/aum/web/charmi_repository/php-mvc-master/vendor/composer/../../core/Support/helpers.php): Failed to open stream: No such file or directory in /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php on line 78PHP message: PHP Fatal error:  Uncaught Error: Failed opening required '/home/aum/web/charmi_repository/php-mvc-master/vendor/composer/../../core/Support/helpers.php' (include_path='.:/usr/share/php') in /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php:78
+Stack trace:
+#0 /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php(61): composerRequireed002f9897076390706a3fa3816e0b6d()
+#1 /home/aum/web/charmi_repository/php-mvc-master/vendor/autoload.php(7): ComposerAutoloaderInited002f9897076390706a3fa3816e0b6d::getLoader()
+#2 /home/aum/web/charmi_repository/php-mvc-master/public/index.php(10): require('...')
+#3 {main}
+  thrown in /home/aum/web/charmi_repository/php-mvc-master/vendor/composer/autoload_real.php on line 78" while reading response header from upstream, client: 192.168.100.91, server: mvcphp.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "www.mvcphp.com"
