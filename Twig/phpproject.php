@@ -14,7 +14,7 @@
  }
 
 //User
- $user = mysqli_query($con , "SELECT * FROM User");
+ $user = mysqli_query($con , "SELECT * FROM User ");
  while ($urec = mysqli_fetch_array($user)) 
  {
    $udata[] = array(

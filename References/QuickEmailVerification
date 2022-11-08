@@ -41,7 +41,7 @@ Blog :
 
 QEV - API - 5e85217cc8f24601c774b698502e4217a7295728b28b7c2ef2672aab249d
 
-Yesterday : 03/11/2022
+Yesterday : 03/11/2022 :
     [08:00] : QEV
         - Sign up & Login in QEV
         - Refer Dashboard & Activity,
@@ -56,18 +56,29 @@ Today : 04/11/2022
         - Refer Docs,
         - Blogs
 
-Today : 05/11/2022
+Today : 05/11/2022 : Saturday
     [04:00] : QEV
         - GDPR on QEV
         - Refer Integrations with ESP
         - [Docs] Email Verification API
 
-Today : 07/11/2022
+Today : 07/11/2022 : Monday
     [08:00] : QEV
         - Refer Result of Bult Email Verification, API
         - Refer all web
         - Move on App[Javascript]
+        - Meeting
 
+Today : 08/11/2022 : Tuesday
+    [08:00] : QEV
+        - Docs / Javascript Widget
+        - API Calling
+        - Create App Using PHP
+
+
+Query :
+    - MX Record
+    - Sandbox & Production
 
 
 
