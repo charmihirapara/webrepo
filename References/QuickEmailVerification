@@ -75,6 +75,29 @@ Today : 08/11/2022 : Tuesday
         - API Calling
         - Create App Using PHP
 
+Today : 09/11/2022 : Wednesday
+    [08:00] : QEV
+        - Meeting
+        - API Setting - Curl API in Single & List API
+        - Email verification - Reverify Concept
+        - ESP
+
+
+
+09/11/2022 :
+    - After Login in Email Verification
+        * Single Email verification
+            - Make Single Verification
+            - It says Recent Verified Email Address [5 Last Email Address]
+        * Bulk Email Verification
+            - Upload .txt,.csv,.xls,.ods files
+            - After Verify that file is supported files or not
+            - It gives two button verify & delete
+            - Using verify our file ready to process for verification
+            - After some sec. it gives process chart or our file & we can download our file basis on Result
+            - we can also verify it valid, Invalid & Unknown Emails
+    - Credit calculation : Only count Valid & Invalid Emails , Not count Unknown Emails
+
 
 Query :
     - MX Record
