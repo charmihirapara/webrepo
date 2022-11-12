@@ -3,6 +3,7 @@ require 'dbconnection.php';
 require_once 'vendor/autoload.php';
 if(isset($_POST['submit']))
 {
+
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$password = $_POST['password'];

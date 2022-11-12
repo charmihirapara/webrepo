@@ -113,12 +113,19 @@ Today : 09/11/2022 : Wednesday
         [01:00] - Verification Activity & Reverify Email List : Completed
         [01:30] - Team Account : Completed
 
+12/11/222 : Saturday
+    [04:00] : QEV
+        [01:00] - Sandbox Mode : Completed
+        [03:00] - Verify An Email Address & Verify Email Lists : Completed
 
 * Only Access When we purchased creditd
     - List API Usege [Need Subscriptions]
     - Team Account [Need Subscriptions]
     - Api Setting -> Refresh API key [Need Subscriptions]
 
+* Sandbox Mode:
+    - It is used for testing
+    - It is totally Free, No Credits will be diducted
 Query :
     - MX Record
 
