@@ -3323,3 +3323,6 @@
 192.168.100.91 - - [15/Nov/2022:09:29:25 +0530] "GET /style.css HTTP/1.1" 404 555 "http://phpproject.com/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
 192.168.100.91 - - [15/Nov/2022:09:29:30 +0530] "GET / HTTP/1.1" 200 11271 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
 192.168.100.91 - - [15/Nov/2022:09:29:30 +0530] "GET /style.css HTTP/1.1" 404 555 "http://phpproject.com/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+192.168.100.91 - - [17/Nov/2022:17:57:12 +0530] "GET / HTTP/1.1" 200 11270 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0"
+192.168.100.91 - - [17/Nov/2022:17:57:12 +0530] "GET /style.css HTTP/1.1" 404 153 "http://phpproject.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0"
+192.168.100.91 - - [17/Nov/2022:17:57:14 +0530] "GET /favicon.ico HTTP/1.1" 404 153 "http://phpproject.com/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:106.0) Gecko/20100101 Firefox/106.0"
