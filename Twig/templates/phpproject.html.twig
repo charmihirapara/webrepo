@@ -4,6 +4,7 @@
 	  <a class="active" href="#home">Dashboard</a>
 	  <a href="#datatable">Data Tables</a>
 	  <a href="#form">User Form</a>
+      <a href="#file">Bulk Email Verification</a>
 	</div>
 	{# Dashboard #}
 	<div class=" content" id="home">
@@ -31,6 +32,17 @@
             </form>
         </div>
     {% endblock %}
+
+    <div class="content" id="file"> 
+        <form action="action_form.php" style="max-width:500px;margin:auto" method="post">
+            <h2>Bulk Email Verification</h2>              
+              <div class="input-container">
+                <i class="fa fa-file icon"></i>
+                <input class="input-field" type="file" placeholder="File" name="file" required>
+              </div>
+              <button type="submit" class="btn" name="file_submit">Submit</button>
+        </form> 
+    </div>
     
 
 	<div class=" content" id="datatable">
