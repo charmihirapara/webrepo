@@ -67,12 +67,13 @@ if (isset($_POST['file_submit']))
 	$file = $_POST['file'];
 
 	$headers = array();
-	$headers[] = "Authorization:token c0e41088053ddec2edf603ed190fc7dae5ec40dabc631ab80ffefd110d15"; // Replace API_KEY with your API Key
+	$headers[] = "Authorization:token c0e41088053ddec2edf603ed190fc7410a2b8bdca69f7922436dffada56e"; // Replace API_KEY with your API Key
 	// $headers[] = "X-QEV-Filename:mail.csv"; // Set the display name of file to upload (optional)
 	// $headers[] = 'X-QEV-Callback:http://www.phpproject.com'; // Set your callback URL (optional)
 
 	// This is a path to your file to upload
 	$post = array('upload' => $file);
+	
 
 	$ch = curl_init("https://vrp.api.evm.222.aum/v1/bulk-verify");
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -84,7 +85,6 @@ if (isset($_POST['file_submit']))
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
 	$result = curl_exec($ch);
 	print_r($ch);
-	exit();
 	$jsonToArray = json_decode($result, true);
 	print_r($result);
  	curl_close($ch);
