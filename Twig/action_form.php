@@ -3,11 +3,12 @@ require 'dbconnection.php';
 require_once 'vendor/autoload.php';
 if(isset($_POST['submit']))
 {
+	echo 'yes from free'."<br><br>";
 
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$password = $_POST['password'];
-	$client   = new QuickEmailVerification\Client('5e85217cc8f24601c774b698502e4217a7295728b28b7c2ef2672aab249d');
+	$client   = new QuickEmailVerification\Client('c0e41088053ddec2edf603ed190fc7b5046a8b8e917ede2c5b23e46743d1');
 	$quickemailverification  = $client->quickemailverification();
 	try {
 	// PRODUCTION MODE
@@ -15,7 +16,8 @@ if(isset($_POST['submit']))
 	  //print_r($response);
 	  // echo gettype($response);
 	  $array = (array) $response;
-	  echo $array['body']['result'];
+	  echo $array['body']['result']."Yes";
+	  exit();
 	  if ($array['body']['result'] == 'valid') 
 	  {
 	  	$query = "INSERT INTO User(`name`, `email`, `password`) VALUES ('$name', '$email', '$password')";
@@ -59,20 +61,21 @@ if(isset($_POST['submit']))
 	}
 	
 	exit();
-	
 }
 
 if (isset($_POST['file_submit'])) 
 {
+	echo 'Yes From Paid'."<br><br>";
 	$file = $_POST['file'];
 
 	$headers = array();
-	$headers[] = "Authorization:token c0e41088053ddec2edf603ed190fc7410a2b8bdca69f7922436dffada56e"; // Replace API_KEY with your API Key
+	$headers[] = "Authorization:token c0e41088053ddec2edf603ed190fc75c0afa4ee8e919af8405312a80eb1d"; // Replace API_KEY with your API Key
 	// $headers[] = "X-QEV-Filename:mail.csv"; // Set the display name of file to upload (optional)
-	// $headers[] = 'X-QEV-Callback:http://www.phpproject.com'; // Set your callback URL (optional)
+	// $headers[] = 'X-QEV-Callback:http://www.phpproject.com/qev-callback'; // Set your callback URL (optional)
 
 	// This is a path to your file to upload
-	$post = array('upload' => $file);
+	$post = array('upload' => '@/home/aum/web/charmi_repository/QEV/mail.csv');
+	//print_r($post);
 	
 
 	$ch = curl_init("https://vrp.api.evm.222.aum/v1/bulk-verify");
@@ -84,9 +87,8 @@ if (isset($_POST['file_submit']))
 	curl_setopt($ch, CURLOPT_TIMEOUT, 30); 
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
 	$result = curl_exec($ch);
-	print_r($ch);
 	$jsonToArray = json_decode($result, true);
-	print_r($result);
  	curl_close($ch);
+ 	print_r($result);
 }
 ?>

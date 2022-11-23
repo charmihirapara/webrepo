@@ -1,0 +1,52 @@
+{
+"id":"001cb82e22c2ed7f10c5a5be64371a31",
+"filename":"mail.csv",
+"status":"queued",
+"created_date":"2022-11-23T05:33:06.000Z",
+"started_date":"",
+"completed_date":"",
+"processing_time":0,
+"stats":
+    {"total_email":3,
+    "progress":"",
+    "result_counts":
+        {"safetosend":0,
+        "valid":0,
+        "invalid":0,
+        "unknown":0
+        }
+    },
+"download_urls":[],
+"success":true,
+"message":""
+}
+
+----Curl Bulk API----
+
+{
+"id":"ad957807c7634f0e1107cd9b2dfe12d2",
+"filename":"mail.csv",
+"status":"completed",
+"created_date":"2022-11-23T10:04:28.000Z",
+"started_date":"2022-11-23T10:04:28.000Z",
+"completed_date":"2022-11-23T10:04:33.000Z",
+"processing_time":5,
+"stats":
+    {"total_email":3,
+    "progress":"100%",
+    "result_counts":
+        {"safetosend":0,
+        "valid":0,
+        "invalid":1,
+        "unknown":2
+        }
+    },
+"download_urls":
+    {"safetosend":"https://vrp.api.evm.222.aum/v1/bulk-verify/download/safetosend/ad957807c7634f0e1107cd9b2dfe12d2?apikey=c0e41088053ddec2edf603ed190fc7b5046a8b8e917ede2c5b23e46743d1",
+    "valid":"https://vrp.api.evm.222.aum/v1/bulk-verify/download/valid/ad957807c7634f0e1107cd9b2dfe12d2?apikey=c0e41088053ddec2edf603ed190fc7b5046a8b8e917ede2c5b23e46743d1",
+    "invalid":"https://vrp.api.evm.222.aum/v1/bulk-verify/download/invalid/ad957807c7634f0e1107cd9b2dfe12d2?apikey=c0e41088053ddec2edf603ed190fc7b5046a8b8e917ede2c5b23e46743d1",
+    "unknown":"https://vrp.api.evm.222.aum/v1/bulk-verify/download/unknown/ad957807c7634f0e1107cd9b2dfe12d2?apikey=c0e41088053ddec2edf603ed190fc7b5046a8b8e917ede2c5b23e46743d1",
+    "fullreport":"https://vrp.api.evm.222.aum/v1/bulk-verify/download/fullreport/ad957807c7634f0e1107cd9b2dfe12d2?apikey=c0e41088053ddec2edf603ed190fc7b5046a8b8e917ede2c5b23e46743d1"
+    },
+    "success":true,"message":""
+}
