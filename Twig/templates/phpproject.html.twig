@@ -12,7 +12,7 @@
 	</div>
     {% block form_block %}
         <div class=" content form_content" id="form">
-            <form action="action_form.php" style="max-width:500px;margin:auto" method="post">
+            <form action="action_form.php" style="max-width:500px;margin:auto" method="post" enctype="multipart/form-data">
               <h2>Register Form</h2>
               <div class="input-container">
                 <i class="fa fa-user icon"></i>
@@ -34,18 +34,18 @@
     {% endblock %}
 
     <div class="content" id="file"> 
-        <form action="action_form.php" style="max-width:500px;margin:auto" method="post">
+        <form action="action_form.php" style="max-width:500px;margin:auto" enctype="multipart/form-data" method="post">
             <h2>Bulk Email Verification</h2>              
-              <div class="input-container">
-                <i class="fa fa-file icon"></i>
-                <input class="input-field" type="file" placeholder="File" name="file" required>
-              </div>
-              <button type="submit" class="btn" name="file_submit">Submit</button>
+                <div class="input-container">
+                    <i class="fa fa-file icon"></i>
+                    <input class="input-field" type="file" name="file" required>
+                </div>
+                <button type="submit" class="btn" name="file_submit">Submit</button>
         </form> 
     </div>
     
 
-	<div class=" content" id="datatable">
+	<div class="content" id="datatable">
 	  <h2>Category</h2>            
 	  <table class="table table-hover">
 	    <thead>
@@ -157,9 +157,10 @@
 
 <script>
     QuickEmailVerification = {
-    pubKey: "bbd631499d1605f11e0f999a72a567"
+    pubKey: "c9f6f8ca3b21849b872b74dd3061f4"
     }
 </script>
 <script type="text/javascript" src="//vrp.cdn.evm.222.aum/js/verifyemail.js"></script>
+
 </body>
 </html>
