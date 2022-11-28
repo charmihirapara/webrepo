@@ -1,10 +1,11 @@
 {% include 'header.html.twig' %}
 <body class="">
 	<div class="sidebar">
-	  <a class="active" href="#home">Dashboard</a>
+	  <a href="#home">Dashboard</a>
 	  <a href="#datatable">Data Tables</a>
 	  <a href="#form">User Form</a>
       <a href="#file">Bulk Email Verification</a>
+      <a href="#debug">Debugging JS-App</a>
 	</div>
 	{# Dashboard #}
 	<div class=" content" id="home">
@@ -44,6 +45,22 @@
         </form> 
     </div>
     
+    <div class="content" id="debug"> 
+        <h1>Debug JS-App</h1><hr>
+        <div class=" content form_content" style="max-width:500px;margin:auto" id="form">
+            
+              <div class="input-container">
+                <label>Enter First Value</label>
+                <input class="input-field" type="text" placeholder="First Value" name="first" id="first">
+              </div> 
+              <div class="input-container">
+                <label>Enter Second Value</label>
+                <input class="input-field" type="text" placeholder="Second Value" name="second" id="second">
+              </div>
+              <label id="labelans"></label>
+              <button type="submit" class="btn" onclick="updateLabel()">Sum</button>
+        </div>        
+    </div>
 
 	<div class="content" id="datatable">
 	  <h2>Category</h2>            
@@ -155,12 +172,26 @@
 	</div>	
 
 
+<script type="text/javascript">
+function updateLabel()
+{
+    console.log("Yes");
+    var addend1 = parseInt($("#first").val());
+    console.log('addend1:', addend1);
+    var addend2 = parseInt($("#second").val());
+    console.log('addend2:', addend2);
+    var sum = addend1 + addend2;
+    console.log('sum:', sum);
+    $("#labelans").text(sum);
+}
+</script>
+
 <script>
     QuickEmailVerification = {
     pubKey: "bbd631499d1605f11e0f999a72a567"
     }
 </script>
-<script type="text/javascript" src="http://vrp.cdn.evm.222.aum/js/verifyemail.js"></script>
+<script type="text/javascript" src="//vrp.cdn.evm.222.aum/js/verifyemail.js"></script>
 
 </body>
 </html>

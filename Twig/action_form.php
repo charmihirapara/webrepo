@@ -22,7 +22,7 @@ if(isset($_POST['submit']))
 	$password = $_POST['password'];
 	echo $email;
 
-	$client = new QuickEmailVerification\Client('5e85217cc8f24601c774b698502e4217a7295728b28b7c2ef2672aab249d'); 
+	$client = new QuickEmailVerification\Client('c0e41088053ddec2edf603ed190fc7e0ce5a871e9cba5ec0fe91f7b3d809'); 
 	$quickemailverification = $client->quickemailverification();
 
 
@@ -42,11 +42,11 @@ if (isset($_POST['file_submit']))
 	echo "File Name : ".$file;
 
 	$headers = array();
-	$headers[] = "Authorization:token c0e41088053ddec2edf603ed190fc75c0afa4ee8e919af8405312a80eb1d"; 
+	$headers[] = "Authorization:token c0e41088053ddec2edf603ed190fc7e0ce5a871e9cba5ec0fe91f7b3d809"; 
 	$headers[] = "X-QEV-Filename:mail.csv"; // Set the display name of file to upload (optional)
 	$headers[] = 'X-QEV-Callback:http://www.phpproject.com/qev-callback'; // Set your callback URL (optional)
 
-	$post = array('upload' => $file);
+	$post = array('upload' => $path);
 	// echo file_get_contents($file);
 
 	$CSVfp = fopen($path, "r") or die("Unable to open file!");
