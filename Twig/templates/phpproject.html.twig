@@ -22,7 +22,7 @@
 
               <div class="input-container">
                 <i class="fa fa-envelope icon"></i>
-                <input class="input-field" type="email" id="email-field" placeholder="Email" name="email" data-qev-email-field>
+                 <input id="email" type="email" tabindex="3" name="email" data-type="email" required="" placeholder="Please enter address">
               </div>
               
               <div class="input-container">
@@ -171,10 +171,16 @@
 	  </table>
 	</div>	
 
+<script>
+    var QuickEmailVerification = {
+    pubKey: "4a77e5f974522a0badbb627537e905"
+    }
+</script>
+<script type="text/javascript" src="//vrp.cdn.evm.222.aum/js/verifyemail.debug.js"></script>
 
 <script type="text/javascript">
-function updateLabel()
-{
+    function updateLabel()
+    {
     console.log("Yes");
     var addend1 = parseInt($("#first").val());
     console.log('addend1:', addend1);
@@ -183,15 +189,10 @@ function updateLabel()
     var sum = addend1 + addend2;
     console.log('sum:', sum);
     $("#labelans").text(sum);
-}
-</script>
-
-<script>
-    QuickEmailVerification = {
-    pubKey: "bbd631499d1605f11e0f999a72a567"
     }
 </script>
-<script type="text/javascript" src="//vrp.cdn.evm.222.aum/js/verifyemail.js"></script>
+
+
 
 </body>
 </html>

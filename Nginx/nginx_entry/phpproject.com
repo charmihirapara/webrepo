@@ -5,7 +5,7 @@ server {
 
 	root /home/aum/web/charmi_repository/Twig/;
 
-	index phpproject.php action_form.php  index.html index.htm index.nginx-debian.html;
+	index phpproject.php  index.html index.htm index.nginx-debian.html;
 
 	server_name phpproject.com www.phpproject.com;
 
