@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-</head>
-<body>
-
-</body>
-</html>
 <?php 
 require 'dbconnection.php';
 require_once 'vendor/autoload.php';
@@ -20,7 +9,7 @@ if(isset($_POST['submit']))
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$password = $_POST['password'];
-	echo $email;
+	// echo $email;
 
 	$client = new QuickEmailVerification\Client('c0e41088053ddec2edf603ed190fc7e0ce5a871e9cba5ec0fe91f7b3d809'); 
 	$quickemailverification = $client->quickemailverification();
@@ -39,12 +28,12 @@ if (isset($_POST['file_submit']))
 	echo 'Yes From Paid'."<br><br>";
 	$file = $_FILES['file']['name'];
 	$path = $_FILES['file']['tmp_name'];
-	echo "File Name : ".$file;
+	echo "File Name : ".$file."<br><br>";
 
 	$headers = array();
 	$headers[] = "Authorization:token c0e41088053ddec2edf603ed190fc7e0ce5a871e9cba5ec0fe91f7b3d809"; 
-	$headers[] = "X-QEV-Filename:mail.csv"; // Set the display name of file to upload (optional)
-	$headers[] = 'X-QEV-Callback:http://www.phpproject.com/qev-callback'; // Set your callback URL (optional)
+	// $headers[] = "X-QEV-Filename:mail.csv"; // Set the display name of file to upload (optional)
+	// $headers[] = 'X-QEV-Callback:http://www.phpproject.com/qev-callback'; // Set your callback URL (optional)
 
 	$post = array('upload' => $path);
 	// echo file_get_contents($file);

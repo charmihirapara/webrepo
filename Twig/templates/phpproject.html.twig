@@ -22,7 +22,7 @@
 
               <div class="input-container">
                 <i class="fa fa-envelope icon"></i>
-                 <input id="email" type="email" tabindex="3" name="email" data-type="email" required="" placeholder="Please enter address">
+                 <input id="email" class="input-field" type="email" tabindex="3" name="email" data-type="email" required="" placeholder="Please enter address">
               </div>
               
               <div class="input-container">
@@ -171,27 +171,27 @@
 	  </table>
 	</div>	
 
-<script>
-    var QuickEmailVerification = {
-    pubKey: "4a77e5f974522a0badbb627537e905"
-    }
-</script>
-<script type="text/javascript" src="//vrp.cdn.evm.222.aum/js/verifyemail.debug.js"></script>
+
 
 <script type="text/javascript">
     function updateLabel()
     {
-    console.log("Yes");
-    var addend1 = parseInt($("#first").val());
-    console.log('addend1:', addend1);
-    var addend2 = parseInt($("#second").val());
-    console.log('addend2:', addend2);
-    var sum = addend1 + addend2;
-    console.log('sum:', sum);
-    $("#labelans").text(sum);
+        console.log("Yes");
+        var addend1 = parseInt($("#first").val());
+        console.log('addend1:', addend1);
+        var addend2 = parseInt($("#second").val());
+        console.log('addend2:', addend2);
+        var sum = addend1 + addend2;
+        console.log('sum:', sum);
+        $("#labelans").text(sum);
     }
 </script>
-
+<script>
+    QuickEmailVerification = {
+    pubKey: "30f4de9f1792129e2c7d93fda8d418"
+    }
+</script>
+<script type="text/javascript" src="//vrp.cdn.evm.222.aum/js/verifyemail.debug.js"></script>
 
 
 </body>
