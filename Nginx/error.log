@@ -17565,3 +17565,334 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:19:12 [error] 1120#1120: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:19:12 [error] 1120#1120: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:20:12 [error] 1120#1120: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:20:12 [error] 1120#1120: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:20:28 [error] 1120#1120: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:20:28 [error] 1120#1120: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:41 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:41 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:41 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:41 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:42 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:42 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:42 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:42 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:42 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:42 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:42 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:42 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:42 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:42 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:43 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:43 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:43 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:36:43 [error] 1122#1122: *5 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:04 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:04 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:05 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:05 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:05 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:05 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:05 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:05 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:05 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:05 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:05 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:05 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:05 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:05 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:05 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:05 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:06 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:06 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:06 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:06 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:06 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:06 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:06 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:06 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:06 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:06 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:07 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:55:07 [error] 1123#1123: *15 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:28 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:28 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:30 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:30 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:32 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:32 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:33 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:33 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:33 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:33 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:33 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:33 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:33 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:33 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:33 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:33 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:34 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:34 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:34 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:34 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:34 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 09:59:34 [error] 1121#1121: *31 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:00 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:00 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:00 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:00 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:01 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:01 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:03 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:03 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:03 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:03 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:03 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:03 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:04 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:04 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:04 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:08:04 [error] 1120#1120: *43 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:13:59 [error] 1120#1120: *52 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:13:59 [error] 1120#1120: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:14:02 [error] 1120#1120: *52 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:14:02 [error] 1120#1120: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:14:02 [error] 1120#1120: *52 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:14:02 [error] 1120#1120: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:14:02 [error] 1120#1120: *52 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:14:02 [error] 1120#1120: *52 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:18:47 [error] 1120#1120: *57 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:18:47 [error] 1120#1120: *57 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:34:10 [error] 1120#1120: *59 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:34:10 [error] 1120#1120: *59 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:50:38 [error] 1120#1120: *61 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 10:50:38 [error] 1120#1120: *61 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 11:50:11 [error] 1120#1120: *63 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 11:50:11 [error] 1120#1120: *63 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 11:50:12 [error] 1120#1120: *63 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 11:50:12 [error] 1120#1120: *63 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 11:50:13 [error] 1120#1120: *63 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 11:50:13 [error] 1120#1120: *63 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:25:42 [crit] 1165#1165: *1 connect() to unix:/run/php/php8.1-fpm.sock failed (13: Permission denied) while connecting to upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:26:16 [error] 3815#3815: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:26:16 [error] 3815#3815: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:30:25 [error] 3816#3816: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:30:25 [error] 3816#3816: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:30:25 [error] 3816#3816: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:30:25 [error] 3816#3816: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:30:25 [error] 3816#3816: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:30:25 [error] 3816#3816: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:30:25 [error] 3816#3816: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:30:25 [error] 3816#3816: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:30:25 [error] 3816#3816: *3 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:30:25 [error] 3816#3816: *3 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:39:20 [error] 3818#3818: *9 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:39:20 [error] 3818#3818: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:39:21 [error] 3818#3818: *9 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 14:39:21 [error] 3818#3818: *9 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 16:05:36 [error] 3817#3817: *12 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 16:05:36 [error] 3817#3817: *12 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 17:04:02 [error] 3815#3815: *14 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 17:04:02 [error] 3815#3815: *14 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 17:48:28 [error] 3815#3815: *16 FastCGI sent in stderr: "PHP message: PHP Warning:  Undefined array key "status" in /home/aum/web/charmi_repository/Twig/phpproject.php on line 65" while reading response header from upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"
+2022/12/02 17:48:28 [error] 3815#3815: *16 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught Error: Class "CacheExtension" not found in /home/aum/web/charmi_repository/Twig/phpproject.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/aum/web/charmi_repository/Twig/phpproject.php on line 78" while reading upstream, client: 192.168.100.91, server: phpproject.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/run/php/php8.1-fpm.sock:", host: "phpproject.com"

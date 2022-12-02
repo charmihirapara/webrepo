@@ -197,6 +197,17 @@ Today : 09/11/2022 : Wednesday
         [01:30] : Check The Result using Status job id in curl : Finish
         [03:00] : See the Team Member Role User & Developers : Continue
 
+01/12/2022 : Thursday
+    [08:00] - QEV
+        [02:30] : Check the Facilities Deference between User & Developer : Finish
+        [03:30] : Login as Developer and see the role-wise activity : Continue
+
+02/12/2022 : Friday
+    [08:00] : QEV
+        [02:00] : Check the JS app with same Domain with different Role [Owner : Developer] : Finish
+        [02:00] : Check the API & Regenerate API By Developer & Owner : Finish
+        [02:30] : Edit Team Member by owner and Check the Facilities of admin  : Finish
+        [01:30] : Edit Team Memeber by Admin and New Invite User by Admin  : Continue
 
 
 Job status ID : 001cb82e22c2ed7f10c5a5be64371a31
@@ -214,6 +225,7 @@ Data Subject
 * Sandbox Mode:
     - It is used for testing
     - It is totally Free, No Credits will be diducted
+
 Query :
     - MX Record
 
@@ -221,9 +233,11 @@ Query :
 
 30/11/2022 : Wednesday
 Remaining :
-   - Regenerate API Key
+   - Regenerate API Key : Done
    - Information about Gearman
-
+   - Edit Team Memeber by owner/Admin : Done
+   - Multi Threded Cloud plateform
+   - Email Which is add by team owner thatis not register by user
 
 
 
