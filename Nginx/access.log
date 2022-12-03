@@ -7477,3 +7477,8 @@
 192.168.100.91 - - [02/Dec/2022:16:05:36 +0530] "GET / HTTP/1.1" 200 12674 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
 192.168.100.91 - - [02/Dec/2022:17:04:02 +0530] "GET / HTTP/1.1" 200 12674 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
 192.168.100.91 - - [02/Dec/2022:17:48:28 +0530] "GET / HTTP/1.1" 200 12674 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+192.168.100.91 - - [03/Dec/2022:09:12:12 +0530] "GET / HTTP/1.1" 200 12674 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+192.168.100.91 - - [03/Dec/2022:09:12:13 +0530] "GET /favicon.ico HTTP/1.1" 404 555 "http://phpproject.com/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+192.168.100.91 - - [03/Dec/2022:10:31:16 +0530] "GET / HTTP/1.1" 200 12674 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+192.168.100.91 - - [03/Dec/2022:11:16:25 +0530] "GET / HTTP/1.1" 200 87 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+192.168.100.91 - - [03/Dec/2022:11:16:25 +0530] "GET /favicon.ico HTTP/1.1" 404 555 "http://192.168.100.91/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
