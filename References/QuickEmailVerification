@@ -209,33 +209,29 @@ Today : 09/11/2022 : Wednesday
         [02:30] : Edit Team Member by owner and Check the Facilities of admin  : Finish
         [01:30] : Edit Team Memeber by Admin and New Invite User by Admin  : Continue
 
-
 Ram Ram,
 Good Afternoon,
-
 Work schedule
-    Today : 03/12/2022 : Saturday
+Today : 03/12/2022 : Saturday
     (04:00) -> Edit Team Member by Admin and check the Facilities : Finish
-    Tomorrow : 05/12/2022 : Monday
+Tomorrow : 05/12/2022 : Monday
     -> EVM : Set up EVM in local
 
 Ram Ram,
 Good Afternoon,
-
 Work schedule
-    Today : 05/12/2022 : Monday
+Today : 05/12/2022 : Monday
     [01:00] -> Refer all Primium Functionalities : Finish
     [00:30] -> Meeting
     [02:30] -> Curl Individual Result & Regenerate API Key Refer : Finish
     [03:30] -> What is docker & How it Works : Continue
-    Tomorrow : 06/12/2022 : Tuesday
+Tomorrow : 06/12/2022 : Tuesday
     [08:00] EVM
         [01:00] -> Continue on How it Works &
         [07:00] -> Set up EVM in local & Continue on
 
 Ram Ram,
 Good Afternoon,
-
 Work schedule
 Today : Tuesday
     [08:00] EVM
@@ -247,7 +243,18 @@ Tomorrow : Wednesday
     [08:00] EVM
     [08:00] -> Set up EVM in local & Continue on
 
-
+Ram Ram,
+Good Afternoon,
+Work schedule
+Today : Wednesday
+    [08:00] EVM
+    [02:00] -> Continue on Images & Containers : Finish
+    [02:00] -> Start The Installation of docker & Refer about Docker-Compose : Finish
+    [03:00] -> Understand about the Docker Network : Finish
+    [01:00] -> Clone the git  repository & Found some Issues : Continue
+Tomorrow : Thursday
+    [08:00] EVM
+    [08:00] -> Set up EVM in local & Continue on
 
 
 
@@ -275,7 +282,10 @@ Remaining :
    - Email Which is add by team owner that is not register by user
 
 
+Local Setup :
 
+Step 5: Create docker network
+cbea4cef1e1cf7588f9e1a689cd44795e83148b839adc5c4d2d0ff5d4d08753c
 
 
 
