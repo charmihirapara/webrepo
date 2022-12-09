@@ -1,0 +1,2 @@
+- See the phpmyadmin on browser
+  -> docker network inspect docker-network
