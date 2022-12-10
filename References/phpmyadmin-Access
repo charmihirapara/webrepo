@@ -1,2 +1,6 @@
 - See the phpmyadmin on browser
   -> docker network inspect docker-network
+- Why EVM not Smoothly Setup
+  -> sudo chmod +x /usr/local/bin/docker-compose
+  -> Than After set-up
+  -> evm.php
