@@ -79,3 +79,15 @@ X-Nettix-Blade: 192.168.100.222:80
 Name,Email,Phone,City,email,result,reason,disposable,accept_all,role,free,user,domain,mx_record,mx_domain,did_you_mean
 Charmi,hiraparacharmi@gmail.com,1234567890,Surat,hiraparacharmi@gmail.com,valid,accepted_email,false,false,false,true,hiraparacharmi,gmail.com,gmail-smtp-in.l.google.com,google.com,
 
+
+12/12/2022 : Monday
+
+1st : Remove Captcha
+- env.php
+- registerForm.tpl
+- register.tpl
+- validation.php -> return true
+- PdoConnection.php
+- Mail.class.php
+- register.php
+
