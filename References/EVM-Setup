@@ -8,3 +8,5 @@
       vim /etc/mysql/my.cnf
       [mysqld]
       sql_mode="NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"
+- Get Credits :
+  https://dev.evm.25.aum/siteadmin/index.php?sKey=713
