@@ -307,7 +307,19 @@ Today : Tuesday
     [08:00] -> Test the URLS is working or not : [Profile setting] Continue
 Tomorrow : Wednesday
     [08:00] EVM
-    [08:00] -> Test the URLS is working or not, Refer Project Requirements
+    [01:00] -> Test the URLS is working or not,
+    [04:00] -> Check code for dashboard and refer use of things in dashboard
+    [03:00] -> need to add filter of last 3 days in graph of verification activity
+
+
+
+
+
+
+
+1) Check code for dashboard and refer use of things in dashboard
+2) need to add filter of last 3 days in graph of verification activity
+3) refer use of csvfix and unoconv in brif (as per saturday's meeting) : collect question if have
 
 
 
