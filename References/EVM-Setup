@@ -1,5 +1,6 @@
 - See the phpmyadmin on browser
   -> docker network inspect docker-network
+
 - Why EVM not Smoothly Setup
   -> sudo chmod +x /usr/local/bin/docker-compose
   -> Than After set-up
@@ -8,5 +9,28 @@
       vim /etc/mysql/my.cnf
       [mysqld]
       sql_mode="NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"
+
 - Get Credits :
   https://dev.evm.25.aum/siteadmin/index.php?sKey=713
+
+- Start the docker for service-infra
+  $ cd /home/asha/web/service-infra
+  $ sh deployment/local/start-evm-common-services.sh
+
+- Start the docker for evm project
+  $ cd /home/asha/web/evm
+  $ sh deployment/start-evm-service.sh
+
+- Composer require to set-up TFA [two factor authentication]
+    -After install, composer Update it with php version
+    -Add dependancies for TFA
+      ->composer require robthree/twofactorauth
+
+
+-------------- PROCESS OF THE EVM REGISTRATION -------------------
+
+- First make registration [Remove Google Captcha]
+- Insert in Database which is Registar Data [Make docker permission to access Mariadb]
+- At that moment Generate Activate Invitee link [in Sent_mails.txt]
+- After login to activate Dashboard require credits & Make some code Comment [API.class.php]
+- After Access Profile Setting->TFA Require composer

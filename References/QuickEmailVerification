@@ -311,6 +311,20 @@ Tomorrow : Wednesday
     [04:00] -> Check code for dashboard and refer use of things in dashboard
     [03:00] -> need to add filter of last 3 days in graph of verification activity
 
+Ram Ram,
+Good Afternoon,
+Work schedule
+Today : Wednesday
+    [08:00] EVM
+    [02:00] -> Find the Issues in Profile Setting [Composer Requirement:Fix it]: Finish
+    [01:00] -> Find Some error in TFA & Fix it : Finish
+    [05:00] -> API Can't generate : Continue
+Tomorrow : Thursday
+    [08:00] EVM
+    [01:00] -> Find Issue on Generate API,
+    [04:00] -> Check code for dashboard and refer use of things in dashboard
+    [03:00] -> need to add filter of last 3 days in graph of verification activity
+
 
 
 
@@ -323,7 +337,7 @@ Tomorrow : Wednesday
 
 
 
-* Only Access When we purchased creditd
+* Only Access When we purchased credits
     - List API Usege [Need Subscriptions]
     - Team Account [Need Subscriptions]
     - Api Setting -> Regenerate API key [Need Subscriptions]
@@ -333,14 +347,12 @@ Tomorrow : Wednesday
     - It is totally Free, No Credits will be diducted
 
 Query :
-    - MX Record
-
+    - API Key not generate
 
 
 30/11/2022 : Wednesday
 Remaining :
    - Regenerate API Key : Done
-   - Information about Gearman
    - Edit Team Memeber by owner/Admin : Done
    - Multi Threded Cloud plateform
    - Email Which is add by team owner that is not register by user
