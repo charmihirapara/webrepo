@@ -339,6 +339,19 @@ Tomorrow : Friday
     [02:00] -> Fix Issue of API Generate,
     [04:00] -> Check code for dashboard and refer use of things in dashboard
 
+Ram Ram,
+Good Afternoon,
+Work schedule
+Today : Friday
+    [08:00] EVM
+    [01:15] -> Report : Collect the Block IPs
+    [04:45] -> Found some Issues On API Generate & Fix It
+    [02:30] -> Refer Dashboard
+Tomorrow : Saturday
+    [04:00] EVM
+    [01:00] -> Report : Collect the Block IPs
+    [03:00] -> Refer Dashboard
+
 
 
 
@@ -362,6 +375,8 @@ Tomorrow : Friday
 
 Query :
     - API Key not generate
+    - File Missing   RewriteRule ^usersession?$ ajaxUserSession.php [L,NC] [.htaccess->34]
+
 
 
 30/11/2022 : Wednesday
