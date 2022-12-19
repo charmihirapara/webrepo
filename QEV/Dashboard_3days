@@ -1,0 +1,10 @@
+- Check code for dashboard and refer use of things in dashboard need to add filter of last 3 days in graph of verification activity
+    -Used(Changes) Function in verification Activity:
+    Design of Dashboard [dashboard.tpl]
+    1) getHistory [site.js]
+    -- Ajax Call [ajaxHistory.php] --
+    2) getVerificationHistory [History.class.php]
+    3) setDefaultData [History.class.php]
+    4) getVerifyStatQuery [History.class.php]
+    5) getVerifyStatMultiHistory [History.class.php]
+    6) getReportGraph [Application.class.php]
