@@ -395,6 +395,21 @@ Tomorrow : Wednesday
     [03:00] -> Debugging Bulk Verirfication
     [03:00] -> refer use of csvfix and unoconv in brif
 
+Ram Ram,
+Good Afternoon,
+Work schedule
+Today : Wednesday
+    [08:00] EVM
+    [01:45] -> Report : Collect the Block IPs
+    [00:40] -> Create JS app & check script working or not : Finish
+    [02:30] -> Found some Issues & Fix it : Finish
+    [00:15] -> Check the Single API & List API : Finish
+    [02:00] -> Found Some Issues in List API [curl] & Bulk Verification : Continue
+Tomorrow : Thursday
+    [08:00] EVM
+    [01:00] -> Report : Collect the Block IPs
+    [07:00] -> Fix Issues in List API [curl] & Bulk Verification
+
 
 
 

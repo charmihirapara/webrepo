@@ -1,0 +1,22 @@
+22/12/2022
+
+Blocked IP :
+--------------
+
+64.27.49.85,64.27.49.86,64.27.49.87,64.27.49.88,64.27.49.89,64.27.49.90,64.27.49.91,64.27.49.92,64.27.49.93,64.27.49.94,-(Blocked by Proofpoint Dynamic Reputation )
+
+
+173.248.146.66,173.248.146.67,173.248.146.68,173.248.146.69,173.248.146.70 -(blocked by Vade)
+
+64.27.55.149 - (blocked by bigpond.com)
+
+64.27.55.157,64.27.55.153,64.27.49.153,173.248.144.199,64.27.49.156,64.27.49.151,64.27.49.94,64.27.55.148,64.27.55.146,64.27.54.158,64.27.49.154,173.248.146.67,64.27.55.152,64.27.54.155, - (blocked by BMS)
+
+
+
+
+QUERY :
+RCPT - 454 4.7.1 : Relay access denied 421 4.7.0 starkiller.klikissi.fr Error: too many errors
+64.27.55.154  ##    haykarimapop@livr.fr  ##  U  ##  app1
+RCPT - 454 4.7.1 : Relay access denied 421 4.7.0 starkiller.klikissi.fr Error: too many errors
+64.27.49.153  ##    stef341@hotmal.fr  ##  U  ##  app1
