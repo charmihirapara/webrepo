@@ -1,0 +1,38 @@
+24/12/2022
+
+Blocked IP :
+--------------
+
+64.27.49.85,64.27.49.86,64.27.49.87,64.27.49.88,64.27.49.89,64.27.49.90,64.27.49.91,64.27.49.92,64.27.49.93,64.27.49.94,-(Blocked by Proofpoint Dynamic Reputation )
+
+
+173.248.146.66,173.248.146.67,173.248.146.68,173.248.146.69,173.248.146.70 -(blocked by Vade)
+
+
+64.27.49.151,64.27.55.152,64.27.55.146,64.27.49.87,64.27.49.91,64.27.49.92,64.27.54.157,64.27.49.85,64.27.54.156,64.27.55.153,64.27.55.154,64.27.55.155,64.27.55.148,64.27.49.148,64.27.49.149,64.27.49.150,64.27.49.152,64.27.49.153,64.27.49.154,64.27.49.155,64.27.49.156,64.27.49.157,64.27.49.86,64.27.49.90,64.27.49.94,64.27.54.154,64.27.54.155,64.27.54.158,64.27.55.150,64.27.55.151,64.27.55.156, - (Blocked by bigpond.com)
+
+
+64.27.49.155,173.248.144.202,64.27.49.86,64.27.49.151,64.27.49.153 - (Blocked by backscatterer)
+
+
+173.248.144.200,173.248.144.199,64.27.49.152,64.27.49.92,173.248.144.196, - (Blocked by BMS)
+
+
+
+
+
+
+
+Query : 22/12/2022
+RCPT - 554 5.7.1 Service unavailable; Client host [64.27.49.92] refused by SkyMesh; blocked by The SpamHaus Project
+64.27.49.92  ##    lisaromano@skymesh.com.au  ##  U  ##  app1
+
+https://www.backscatterer.org/index.php?target=test&ip=64.27.49.87
+
+RCPT - 554 5.7.1 Service unavailable; Client host [173.248.144.204] blocked using ips.backscatterer.org; Sorry 173.248.144.204 is blacklisted at http://www.backscatterer.org/?ip=173.248.144.204
+173.248.144.204  ##    mattia@serviziinformaticisrl.it  ##  U  ##  app1
+
+554 The IP 64.27.54.157 is blacklisted by https://www.backscatterer.org/index.php?target=test&ip=64.27.54.157
+
+554 The IP 64.27.49.155 is blacklisted by https://www.backscatterer.org/index.php?target=test&ip=64.27.49.155
+

@@ -14,7 +14,7 @@ NEW API :  a73977438188e8a6364fa2eae3ca1c2d0c67533f2b665966efac8a468eea
 
 
 
-- To get List API Email Verification :
+- To Check List API Email Verification :
 curl -X POST -F 'data=@/home/hiral/Downloads/emails_test_list.csv' 'http://vrp.api.evm.222.aum/v1/bulk-verify?apikey=YOUR_KEY' -H 'X-QEV-Filename:YOUR_FILE_NAME.csv'
 - TO check status : curl --get --include "http://vrp.api.evm.222.aum/v1/bulk-verify/status/JOB_ID?apikey=API_KEY"
 - JS App
