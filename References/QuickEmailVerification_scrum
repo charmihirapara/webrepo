@@ -453,6 +453,21 @@ Tomorrow : Monday
     [01:00] -> Report : Collect the Block IPs
     [04:00] -> Refer Sign-up Page Code, Class & tpl files
 
+Ram Ram,
+Good Afternoon,
+Work schedule
+Today : Monday
+    [08:00] EVM
+    [01:30] -> Report : Collect the Block IPs
+    [02:30] -> Refer Sign-up Page Code, Class & tpl files : Continue
+    [01:30] -> Refer about Gearman : Finish
+    [03:00] -> Docs : SMTP check Process refer : Continue
+Tomorrow : Tuesday
+    [08:00] EVM
+    [01:00] -> Report : Collect the Block IPs
+    [02:00] -> Refer Sign-up Page Code, Class & tpl files in detailed
+    [05:00] -> Refer Docs
+
 
 
 1) Check code for dashboard and refer use of things in dashboard
