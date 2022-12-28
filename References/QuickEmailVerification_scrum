@@ -484,6 +484,25 @@ Tomorrow : Wednesday
     [01:00] -> Linux/Git Commands
     [04:00] -> Refer Docs
 
+Ram Ram,
+Good Afternoon,
+Work schedule
+Today : Wednesday
+    [08:00] EVM
+    [01:45] -> Report : Collect the Block IPs
+    [02:30] -> Sign up page from database side : Finish
+    [03:30] -> Refer siteadmin [User Management,API Management] : Continue
+Tomorrow : Wednesday
+    [08:00] EVM
+    [01:30] -> Report : Collect the Block IPs
+    [04:00] -> Refer siteadmin
+    [02:00] -> Refer Docs
+
+Signup page tables:
+user,email_preference,team_members,user_fingerprint,
+Query :
+    - FB means : force_block & force_buy
+    - Admin - bulkjobReport has search by more invalid/Unknown
 
 
 1) Check code for dashboard and refer use of things in dashboard
@@ -502,8 +521,9 @@ Tomorrow : Wednesday
     - It is totally Free, No Credits will be diducted
 
 Query :
-    - API Key not generate
     - File Missing   RewriteRule ^usersession?$ ajaxUserSession.php [L,NC] [.htaccess->34]
+    - FB means : force_block & force_buy
+    - Admin - bulkjobReport has search by more invalid/Unknown
 
 
 

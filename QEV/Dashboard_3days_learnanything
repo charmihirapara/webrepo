@@ -8,3 +8,8 @@
     4) getVerifyStatQuery [History.class.php]
     5) getVerifyStatMultiHistory [History.class.php]
     6) getReportGraph [Application.class.php]
+
+
+On signup page refer:
+addslashes : add slasshes where found " , '
+strip_tags : remove html,xml tags in content
