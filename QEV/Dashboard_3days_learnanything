@@ -13,3 +13,6 @@
 On signup page refer:
 addslashes : add slasshes where found " , '
 strip_tags : remove html,xml tags in content
+
+If user Used free domain not get 100 credits like [gmail.com]
+If user Used business mail domain that gets free 100 credits

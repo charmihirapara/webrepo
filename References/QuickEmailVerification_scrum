@@ -492,7 +492,7 @@ Today : Wednesday
     [01:45] -> Report : Collect the Block IPs
     [02:30] -> Sign up page from database side : Finish
     [03:30] -> Refer siteadmin [User Management,API Management] : Continue
-Tomorrow : Wednesday
+Tomorrow : Thursday
     [08:00] EVM
     [01:30] -> Report : Collect the Block IPs
     [04:00] -> Refer siteadmin
@@ -503,6 +503,54 @@ user,email_preference,team_members,user_fingerprint,
 Query :
     - FB means : force_block & force_buy
     - Admin - bulkjobReport has search by more invalid/Unknown
+
+Ram Ram,
+Good Afternoon,
+Work schedule
+Today : Thursday
+    [08:00] EVM
+    [01:45] -> Report : Collect the Block IPs
+    [00:45] -> Sign up page : Finish
+    [01:30] -> Refer siteadmin [Js Apps,Verify Job Management,API Report,CAPI Report,Credit Management,Reports] : Finish
+    [02:30] -> Refer Docs [apijob_functionality] : Continue
+    [01:00] -> Refer Login Page code : Continue
+Tomorrow : Friday
+    [08:00] EVM
+    [01:30] -> Report : Collect the Block IPs
+    [02:00] -> Refer siteadmin
+    [03:00] -> Refer Docs
+    [02:00] -> Refer Login Page code
+
+In application table has status A=Active, P=passive,, I=Isolated
+
+
+Query : [siteadmin]
+    -   A I T status not Understanding [JS App]
+    -   CAPI Means
+    -   Given Manual Credits [Credit Management]
+    -   Verification Report has generate error [Reports]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 1) Check code for dashboard and refer use of things in dashboard
@@ -522,18 +570,6 @@ Query :
 
 Query :
     - File Missing   RewriteRule ^usersession?$ ajaxUserSession.php [L,NC] [.htaccess->34]
-    - FB means : force_block & force_buy
-    - Admin - bulkjobReport has search by more invalid/Unknown
-
-
-
-30/11/2022 : Wednesday
-Remaining :
-   - Regenerate API Key : Done
-   - Edit Team Memeber by owner/Admin : Done
-   - Multi Threded Cloud plateform
-   - Email Which is add by team owner that is not register by user
-
 
 Local Setup :
 
