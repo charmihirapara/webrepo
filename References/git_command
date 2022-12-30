@@ -107,9 +107,12 @@ Configuration of Nginx :
 - we have link the config file & new_default file usinf ln command : [ln -s <where new_deafult file is> <where nginx.conf file is>]
 - remove sites-enabled default file & sites-available default file
 
+30/12/2022 : Friday
 
-
-
+Git
+    - If remove file content After Commit we recover Files content till last changes -> git checkout <filename> And for all File|git checkout -f
+    - if we skip git add . so we can alternate command : git commit -m -a "Message"
+    - Remove file from track  | git rm --cached <filename>
 
 
 

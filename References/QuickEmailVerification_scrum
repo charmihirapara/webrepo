@@ -530,6 +530,43 @@ Query : [siteadmin]
     -   Given Manual Credits [Credit Management]
     -   Verification Report has generate error [Reports]
 
+Ram Ram,
+Good Afternoon,
+Work schedule
+Today : Friday
+    [08:00] EVM
+    [01:45] -> Report : Collect the Block IPs
+    [02:30] -> Sign up page : Finish
+    [01:30] -> Siteadmin : Continue
+    [00:45] -> Git Commands
+Tomorrow : Saturday
+    [04:00] EVM
+    [01:00] -> Report : Collect the Block IPs
+    [01:00] -> Refer siteadmin
+    [01:00] -> Git/Linux Commands
+    [01:00] -> Refer Login Page code
+
+[User-table]
+    Status P = When Register User But not Click on Activation Link
+
+Query : [siteadmin]
+    -   A I T status not Understanding [JS App]
+    -   Verification Report has generate error [Reports]
+    -   Same mail Registration
+    -   Allowed max 10 accounts from same business domain in last 2 month
+    -   Why need reg_fingerprint
+    -   CAPI Issues/Report
+    -   Use of IP stat/Email Checker Report
+
+Conclusion :
+[Sign-up]
+- If I try to check without activate my account do login it's redirect on Activation link
+- If Free Domain User login : Credit 0
+- If Business Domain User Login : Credit 100
+- User Status LC = 50
+- User Status FB = 0
+[Resume Jobs]
+- Tables verification_apijob,verification_job
 
 
 
@@ -537,10 +574,7 @@ Query : [siteadmin]
 
 
 
-
-
-
-
+moderation & without activation link
 
 
 
