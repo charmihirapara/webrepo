@@ -570,6 +570,42 @@ Conclusion :
 
 Renew : moderation & without activation link
 
+Ram Ram,
+Good Afternoon,
+Work schedule
+Today : Saturday
+    [08:00] EVM
+    [01:10] -> Report : Collect the Block IPs
+    [00:20] -> Meeting [Admin Helper]
+    [00:45] -> Refer Moderation process & Activation Link
+    [01:00] -> Meeting [Vipulbhai : Single Email Verification-API]
+    [02:30] -> Login Page : Completed
+Tomorrow : Monday
+    [04:00] EVM
+    [01:00] -> Report : Collect the Block IPs
+    [01:00] -> Refer siteadmin
+    [01:00] -> Git/Linux Commands
+    [01:00] -> Refer Login Page code
+
+Renew : email checker report find what issues
+[Conclusion]:
+   - moderation is process of : Block Country,Domain,Ips
+   - Without click on Activation link move on login :
+        - It's redirect on activation page
+            -- If email domain free, tell us chnage your email address with business email
+            - Without change mail address we can generate Activation link
+            -- If we didn't get activation link we can change mail address on that page
+    - Login Page:
+        - tor network
+        - Update Tables [User,User_fingerprint,Fetch from user_email_update]
+        - Status
+            T : Account is terminate
+            P : Not click on Activation Link -> Rediect on activation link
+
+
+Query :
+    Login.tpl have condition : You have to login with old credentials to confirm your login email change request.
+
 
 
 
@@ -608,6 +644,19 @@ cbea4cef1e1cf7588f9e1a689cd44795e83148b839adc5c4d2d0ff5d4d08753c
 
 
 
+Deprecated: idn_to_ascii(): INTL_IDNA_VARIANT_2003 is deprecated in /web/evm/apps/lib/classes/SMTPValidation.class.php on line 1860
+
+Warning: stream_socket_client(): unable to connect to tcp://gmail-smtp-in.l.google.com:25 (Operation timed out) in /web/evm/apps/lib/classes/SMTPValidation.class.php on line 1470
+
+Warning: stream_socket_client(): unable to connect to tcp://alt1.gmail-smtp-in.l.google.com:25 (Operation timed out) in /web/evm/apps/lib/classes/SMTPValidation.class.php on line 1470
+
+Warning: stream_socket_client(): unable to connect to tcp://alt2.gmail-smtp-in.l.google.com:25 (Operation timed out) in /web/evm/apps/lib/classes/SMTPValidation.class.php on line 1470
+
+Warning: stream_socket_client(): unable to connect to tcp://alt3.gmail-smtp-in.l.google.com:25 (Operation timed out) in /web/evm/apps/lib/classes/SMTPValidation.class.php on line 1470
+
+Warning: stream_socket_client(): unable to connect to tcp://alt4.gmail-smtp-in.l.google.com:25 (Operation timed out) in /web/evm/apps/lib/classes/SMTPValidation.class.php on line 1470
+
+Warning: Cannot modify header information - headers already sent by (output started at /web/evm/apps/lib/classes/SMTPValidation.class.php:1860) in /web/evm/apps/lib/helper/commonFunctions.php on line 56
 
 
 
