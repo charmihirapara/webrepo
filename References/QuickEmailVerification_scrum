@@ -645,12 +645,13 @@ Today : Tuesday
     [00:45] -> Refer Dashboard : Finish
     [01:00] -> Refer SMTP_test_cases.txt : Continue
     [02:30] -> job_queue.txt : Continue
-    [00:45] -> Git Commands
+    [01:15] -> Git/Linux Commands
 Tomorrow : Wednesday
     [08:00] EVM
     [01:00] -> Report : Collect the Block IPs
-    [01:00] -> Refer Dashboard code
-    [06:00] -> Refer Docs
+    [01:00] -> Refer Dashboard/Login code
+    [01:00] -> Refer Docs
+    [05:00] -> Forgot PWD/Single Email Verification
 
 
 
