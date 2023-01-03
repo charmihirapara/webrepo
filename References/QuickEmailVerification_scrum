@@ -645,6 +645,7 @@ Today : Tuesday
     [00:45] -> Refer Dashboard : Finish
     [01:00] -> Refer SMTP_test_cases.txt : Continue
     [02:30] -> job_queue.txt : Continue
+    [00:45] -> Git Commands
 Tomorrow : Wednesday
     [08:00] EVM
     [01:00] -> Report : Collect the Block IPs
