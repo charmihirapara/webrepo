@@ -624,8 +624,32 @@ Query :
     Analyze file content and create temp file : step-2
     3.5.8
 
+Conclusion : status [apijob_functionality.txt]
+A : Analyze - First file status
+W : Waiting - After Gearman Worked so
+Q : If Gearman not worked
+R : Running - Verification
+T : Terminate - If request Invalid/Jobid is not proper
+N : Not started - Credit is low
+C : Completed - Verification process complete
+F : Failed - Analyze not sucessful/directory not created
 
 
+
+Ram Ram,
+Good Afternoon,
+Work schedule
+Today : Tuesday
+    [08:00] EVM
+    [01:30] -> Report : Collect the Block IPs
+    [00:45] -> Refer Dashboard : Finish
+    [01:00] -> Refer SMTP_test_cases.txt : Continue
+    [02:30] -> job_queue.txt : Continue
+Tomorrow : Wednesday
+    [08:00] EVM
+    [01:00] -> Report : Collect the Block IPs
+    [01:00] -> Refer Dashboard code
+    [06:00] -> Refer Docs
 
 
 
