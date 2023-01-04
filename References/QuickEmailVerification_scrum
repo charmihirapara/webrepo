@@ -654,6 +654,40 @@ Tomorrow : Wednesday
     [05:00] -> Forgot PWD/Single Email Verification
 
 
+Ram Ram,
+Good Afternoon,
+Work schedule
+Today : Wednesday
+    [08:00] EVM
+    [01:30] -> Report : Collect the Block IPs
+    [01:30] -> Refer Login Page : Finish
+    [03:30] -> Refer Dashboard : Finish
+
+Tomorrow : Thursday
+    [08:00] EVM
+    [01:00] -> Report : Collect the Block IPs
+    [01:00] -> Refer Dashboard/Login code
+    [01:00] -> Refer Docs
+    [05:00] -> Forgot PWD/Single Email Verification
+
+Conclusion :
+[Login Page] :
+    - Ip come from TOR network [MSG is] : Login from proxy IP is not allowed.
+    - user_email_update table has insert query from this function : updateUserEmail, changeEmailDashboard
+[Dashboard Page] :
+    - Fetch Data from Tables:
+        - User -V I U Emails
+        - Application - JS
+        - History/History_api - API V I U
+        - history_bulkjob, history_single, history_apijob, history_capi
+        - Team
+        - TeamMember
+        - Api
+        - webhook - Need?
+        - pay_credit
+        - daily_credit
+    - Functions get credit
+        - getPayCreditInfo (commonFunction.php)
 
 
 

@@ -1,0 +1,303 @@
+EVM Daily Reporting Flow : 
+
+Click Report :-
+---------------
+
+1. Take IPs to prepare "click report" from "accu" and "appguru"
+
+2. Open https://docs.google.com/spreadsheets/d/1srVz93rq9wlOstEoopEmW90hBuhAbMR9t2Pez3dcQmU/edit?ts=5e6098a6#gid=657084361
+	- Keep open current month in sheet and add these IPs in this.
+
+3. Open https://quickemailverification.com/siteadmin/listUser.php
+	- Check all IPs one by one in "Registered IP" field.
+
+4. If record is found by above step then set the "status" column in above google sheet as per the below criteria
+	- Premium user(light orange color of row) -> P
+	- Pending(status field display P) -> pending
+	- "date create" is previous day date and Total verified > 0 -> F
+	- "date create" is previous day date and Total verified = '' -> R
+	- If none of above the set it as blank
+
+5. Perform below steps to find premium users (Registered IP and ID) record by below criteria (https://prnt.sc/vw741m)
+	- Select start and end date of yesterday
+	- Checked these user type "Per Day Subscription" and "Persistent"
+	- Checked status as "All"
+
+If record found by above criteria then add (Registered IP and ID) in google sheet
+
+IP Start :-
+-----------
+
+1. Open https://quickemailverification.com/siteadmin/ipStat.php
+	- If there is huge difference to "Valid" and "Invalid" then need to inform
+
+Report tracking:-
+------------------
+
+1. Open https://quickemailverification.com/siteadmin/adminHelper.php
+	- Go to the "Download log file" section and select "API Job Request", "API Job status Request" and "API Job Download Request" one by one and download the report.
+
+2. Select "API Job Request" and download the report
+	- Need to see second last and third last column in download report
+		Response code (200)
+		Time (0)
+	- Need to see 3rd column in download report
+		UID
+	- Below criteria need to check in download report :-
+		Is there any row contains other than response code : 200
+		Is there any row contains request elapsed time greater than 60
+		If in 3rd column(UID) so many time(more than 1000) same user is trying to upload same report and it were fails
+		If any row have match the above criteria then need to inform
+
+3. Follow the same above steps for other 2 reports ("API Job status Request" and "API Job Download Request") to prepare report
+
+- If not getting any row related to above points then set report as ok
+	API job req - OK
+	API job status req - OK
+	API job download req - OK
+
+Verify Job Management :-
+------------------------
+- We are preparing below reports daily :-
+	1. No upload after file upload error
+	2. No upload after failed jobs
+	3. Email Appending, Verified email series and Verified duplicate emails
+
+1. No upload after file upload error
+	1.1 Open https://quickemailverification.com/siteadmin/adminHelper.php
+		- Go to Download log file at bottom and download the "File Error" report.
+	
+	1.2 Find yesterday records (at the end of file) in download report
+		- Need to see last column and there should be below types
+	    - mainsite
+	    - apijob
+	
+	1.3 Take the UID from the "File Error" report file and search UID with below MODE in list verify page at admin side
+		- If mainsite in "File Error" report file then select the mode as Bulk Job"
+	 	- If apijob in "File Error" report file then select the mode as "Api Job"
+	
+	1.4 if the report's datetime is higher than evm date_create, it means that there are no files uploaded by the user after the error report.
+
+	In this case need to mention UID (file_type) and error reason in the report like below :
+
+	 No upload after file upload error
+	 ---------------------------------
+	 UID    : 84894(.docx) -> Only .csv, .txt, .xls, xlsx or .ods files are allowed to upload.
+
+2. No upload after failed jobs
+	2.1 Open https://quickemailverification.com/siteadmin/listVerifyJob.php
+		To search any upload after erros or not by below criteria
+	 		- select status as failed 
+	 		- select mode Bulk Job
+	 			Check Any record of Yesterday, Follow 2.2 and 2.3 
+	 		- select mode Api Job
+	 			Check Any record of Yesterday, Follow 2.2 and 2.3 
+
+	2.2 If any records are found by above step then
+	 - Open https://quickemailverification.com/siteadmin/listVerifyJob.php it in new tab
+	 - Search record by UID and check that latest record contain date_create is more than the failed record's date_create
+	 - If no need to mention, It means that there is one upload after failed job
+	 - Now If there is no record
+
+	     No upload after failed jobs    
+	     ---------------------------
+	     No one
+
+	 - If there is a record and contain date_create is less than the failed record's date_create
+
+	     No upload after failed jobs    
+	     ---------------------------
+	     UID : 84895     
+	            
+	2.3 If no record
+
+	     No upload after failed jobs    
+	     ---------------------------
+	     No one
+
+3. Email Appending (excluding premium users),Verified email series,Verified duplicate emails:
+	- Need to check for Email Appending (excluding premium users), Verified duplicate emails, Verified email series : 
+
+	- In verify job management page need to set verify date : start date and end date to yesterday and click on Advanced Job Report (Includes only verified job) checkbox before search
+
+		3.1 : Check If Row contain Red counter in Invalid field (https://prnt.sc/vw94bc)
+
+		3.2 : Now In that page check UID is not premium user (click on 40303)
+			- By click on that UID and row is in white color (https://prnt.sc/vw94py)
+
+		3.3 : Click on "C" at right side (https://prnt.sc/vw94bc) one file will be downloaded
+
+		3.4 : Now Check that file contain proper email pattern like : 
+				EX :hiral@aum.bz
+					hiral.mavani@aum.bz
+					hiral-mavani@aum.bz
+					hiral_mavani@aum.bz
+					hiralmavani@aum.bz
+					hmavani@aum.bz
+					hiralm@aum.bz
+				Then set that UID as below :
+				Email Appending (excluding premium users)
+				---------
+				UID : 40303
+
+		3.5 : Check If file contain any specific series like :
+				EX :hiral1@aum.bz
+					hiral2@aum.bz
+					hiral3@aum.bz
+					hiral4@aum.bz
+					hiral5@aum.bz
+					hiral6@aum.bz
+				Then set UID as below :
+				Verified email series
+				-----------
+				UID : 40303
+
+		3.6 : Check duplicate email (https://prnt.sc/vw9afv) Here need to see if duplicate counter is more than the previous count then need to mention as below : 
+			Verified duplicate emails
+			---------
+			UID : 40303
+
+If not match to above all steps then mention as below : 
+	Email Appending (excluding premium users)
+	---------
+	No one
+
+	Verified duplicate emails
+	---------
+	No one
+
+	Verified email series
+	---------
+	No one
+
+Now to make whole report as below : 
+
+	No upload after file upload error
+	---------------------------------
+	UID	: 84894(.docx) -> Only .csv, .txt, .xls, xlsx or .ods files are allowed to upload.
+
+	No upload after failed jobs	
+	---------------------------
+	UID : 84894
+
+	Email Appending (excluding premium users)
+	---------
+	UID : 84894
+
+	Verified duplicate emails
+	---------
+	UID : 84894
+
+	Verified email series
+	---------
+	UID : 84894
+
+Domain result difference report  :-
+-----------------------------------
+
+1. Open https://open.kickbox.io/ and https://quickemailverification.com/siteadmin/deaDetectorTool.php
+
+2. Find yesterday records by using start and end date criteria in DEA detector tool at admin side
+	
+3. Resulted domain compare with KB(https://open.kickbox.io/), EVM and KB result is different like :
+	EVM res : false(https://prnt.sc/vw9d3o)
+	KB res : true(https://prnt.sc/vw9cvf)
+
+4. Then need to mention as below : 
+	=> Evm and KB domains result diff : 
+		- despalar.ml
+			EVM : false
+			KB : true
+
+Steps to collect DEA :-
+---------------------
+
+Download : https://github.com/ivolo/disposable-email-domains/
+
+	cd disposable-email-domains/
+	cp index.json ../tempDEA/
+	git pull
+	git diff ../tempDEA/index.json index.json | tee ./tempDEA/diffDea20200217.txt
+
+	$ git diff /home/hiral/web/evm/tempDEA/index.json index.json | tee /home/hiral/web/evm/tempDEA/diffDea20200504.txt
+
+	replace @@ -\d+,\d+ \+\d+,\d+ @@ with ""
+	replace [ "(.*)",$] with ""
+	replace \n+ with \n
+	replace + and ", with ""
+
+	copy domains and paste it into file(dea.txt) under web/evm/public/dea.txt
+	run https://hmm.evm.116.aum/checkDEA.php
+
+	collect new DEAs
+	find MX using following command
+		- host -t mx DOMAIN_NAME
+		Check into other competitor services
+		- https://open.kickbox.io/
+		- https://debounce.io/free-disposable-check-api/
+		- https://app.neverbounce.com/verify
+
+	check for user management for the Email field
+
+Make Report like below : 
+- 237bets.com - 12355
+    Host : mailstore1.secureserver.net
+    	   smtp.secureserver.net
+	kickbox : "disposable" -> true
+	Debounce : "disposable" -> true
+	neverbounce : DISPOSABLE
+
+Send a Domain report.
+
+EVM monitoring:-
+----------------
+Step1 : 
+		Mail Content : 
+		Find :
+			/dev/sda5  
+			/dev/sda3 
+			Currently running soffice processes(if any).
+			Currently running whois, grep, awk processes(if any).
+			Fatal errors logged since yesterday (if any).
+		Set value from this
+
+		App ID : app1
+		Root directory(/dev/sda5) usage : **51%**
+		tmp directory(/dev/sda3) usage : **5%**
+		Currently running soffice processes : **No**
+		Currently running whois, grep, awk processes : **No**
+		Any Fatal error : **No**
+
+Step2 : 
+	Mail content : 
+		Find : /dev/mapper/centos_aumweb3-root 
+			   Currently running soffice processes(if any).  
+			   Currently running whois, grep, awk processes(if any).
+		Set value from this
+
+	App ID : app2
+	Root directory(/dev/mapper/centos_aumweb3-root) usage : **2%**
+	Currently running soffice processes : **No**
+	Currently running whois, grep, awk processes : **No**
+	Any Fatal error : **No**
+
+No need to mention evm/media/tmp/session_debug.csv file as this is for our debugging purpose
+
+Any Fatal error : Direct mention error
+
+And Finally make report as below : 
+	EVM monitoring
+	---------------
+	App ID : app1
+	Root directory(/dev/sda5) usage : **51%**
+	tmp directory(/dev/sda3) usage : **5%**
+	Currently running soffice processes : **No**
+	Currently running whois, grep, awk processes : **No**
+	Any Fatal error : **No**
+
+	App ID : app2
+	Root directory(/dev/mapper/centos_aumweb3-root) usage : **2%**
+	Currently running soffice processes : **No**
+	Currently running whois, grep, awk processes : **No**
+	Any Fatal error : **No**
+
