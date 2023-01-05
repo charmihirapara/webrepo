@@ -690,7 +690,30 @@ Conclusion :
         - getPayCreditInfo (commonFunction.php)
 
 
+Renew :
+-Welcome note, git revert
+-git pull origin master
+From github.com:charmihirapara/webrepo
+ * branch            master     -> FETCH_HEAD
+-fatal: Not possible to fast-forward, aborting.
 
+-Need to get all unknown resulted rows in new csv files
+
+Ram Ram,
+Good Afternoon,
+Work schedule
+Today : Thursday
+    [08:00] EVM
+    [03:00] -> EVM Daily Reporting
+    [02:00] -> Refer Welcome Notes : Finish
+    [00:45] -> Get all unknown resulted rows in new csv files Using AWK
+Tomorrow : Friday
+    [08:00] EVM
+    [02:00] -> EVM daily Reporting
+
+
+Using awk Command find specific column data:
+awk '/unknown/ {print}' 124615_api_req_2022-12-28.csv > unknownfile.csv
 
 
 
