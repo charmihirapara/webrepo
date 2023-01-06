@@ -705,18 +705,41 @@ Work schedule
 Today : Thursday
     [08:00] EVM
     [03:00] -> EVM Daily Reporting
-    [02:00] -> Refer Welcome Notes : Finish
-    [00:45] -> Get all unknown resulted rows in new csv files Using AWK
+    [00:45] -> Get all unknown resulted rows in new csv files Using AWK : Finish
+    [01:00] -> Git Commands
+    [01:00] -> Refer Dashboard/Forgot Password : Finish
+    [02:00] -> Refer Welcome Notes : Continue
 Tomorrow : Friday
     [08:00] EVM
     [02:00] -> EVM daily Reporting
+    [01:00] -> Git commands
+    [03:00] -> Single Email Verification
+    [01:00] -> Welcome Note
+    [01:00] -> Refer Docs
 
 
 Using awk Command find specific column data:
 awk '/unknown/ {print}' 124615_api_req_2022-12-28.csv > unknownfile.csv
 
+Conclusion :
+[Forgot Password]
+    - Update Tables [User]
 
 
+Ram Ram,
+Good Afternoon,
+Work schedule
+Today : Friday
+    [08:00] EVM
+    [02:00] -> EVM Daily Reporting
+    [01:00] -> AWK Command:Finish
+    [01:00] -> Refer Welcome Note : Continue
+    [01:30] -> Refer smtp_test_cases.txt : Finish
+    [01:00] -> Refer lock_pay_credit_test_cases_flow.txt : Continue
+    [01:00] -> Git Commands
+Tomorrow : Saturday
+    [08:00] EVM
+    [02:00] -> EVM daily Reporting
 
 
 
